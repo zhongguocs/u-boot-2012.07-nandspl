@@ -1,0 +1,1318 @@
+arch/nds32/cpu/n1213/start.S:106:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/armv7/omap-common/spl_nand.c:49:	/*use CONFIG_SYS_TEXT_BASE as temporary storage area */
+arch/arm/cpu/armv7/omap-common/spl_nand.c:50:	header = (struct image_header *)(CONFIG_SYS_TEXT_BASE);
+arch/arm/cpu/armv7/omap-common/spl_nand.c:62:			(void *)CONFIG_SYS_TEXT_BASE);
+arch/arm/cpu/armv7/omap-common/spl_nand.c:65:				src = (int *)CONFIG_SYS_TEXT_BASE;
+arch/arm/cpu/armv7/omap-common/spl_nand.c:66:				src < (int *)(CONFIG_SYS_TEXT_BASE +
+arch/arm/cpu/armv7/omap-common/spl_mmc.c:58:	header = (struct image_header *)(CONFIG_SYS_TEXT_BASE -
+arch/arm/cpu/armv7/omap-common/spl_mmc.c:92:	header = (struct image_header *)(CONFIG_SYS_TEXT_BASE -
+arch/arm/cpu/armv7/omap-common/spl.c:107:		spl_image.entry_point = CONFIG_SYS_TEXT_BASE;
+arch/arm/cpu/armv7/omap-common/spl.c:108:		spl_image.load_addr = CONFIG_SYS_TEXT_BASE;
+arch/arm/cpu/armv7/omap3/lowlevel_init.S:37:	.word	CONFIG_SYS_TEXT_BASE	/* sdram load addr from config.mk */
+arch/arm/cpu/armv7/start.S:84:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/ixp/start.S:101:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/pxa/start.S:108:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm_intcm/start.S:88:	.word	CONFIG_SYS_TEXT_BASE /* address of _start in the linked image */
+arch/arm/cpu/s3c44b0/start.S:67:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm1176/start.S:101:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm1176/start.S:186:	sub	r2, r2, #(CONFIG_SYS_PHY_UBOOT_BASE - CONFIG_SYS_TEXT_BASE)
+arch/arm/cpu/arm925t/start.S:86:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm926ejs/at91/lowlevel_init.S:46:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm926ejs/at91/lowlevel_init.S:57:	sub	r5, r5, r0	/* r0 = CONFIG_SYS_TEXT_BASE-1 */
+arch/arm/cpu/arm926ejs/davinci/spl.c:83:	mem_malloc_init(CONFIG_SYS_TEXT_BASE - CONFIG_SYS_MALLOC_LEN,
+arch/arm/cpu/arm926ejs/start.S:130:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm926ejs/start.S:135:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm926ejs/mx28/mx28.c:194:		((CONFIG_SYS_TEXT_BASE - sizeof(struct mx28_spl_data)) & ~0xf);
+arch/arm/cpu/arm926ejs/mx28/mx28.c:292:		((CONFIG_SYS_TEXT_BASE - sizeof(struct mx28_spl_data)) & ~0xf);
+arch/arm/cpu/arm926ejs/mx28/spl_boot.c:99:		((CONFIG_SYS_TEXT_BASE - sizeof(struct mx28_spl_data)) & ~0xf);
+arch/arm/cpu/arm926ejs/mx28/start.S:122:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm1136/start.S:91:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm946es/start.S:92:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/sa1100/start.S:77:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm720t/start.S:80:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm720t/start.S:601:	ldr	r1, =(relocate-CONFIG_SYS_TEXT_BASE)
+arch/arm/cpu/arm920t/at91/lowlevel_init.S:42:	.word	CONFIG_SYS_TEXT_BASE-PHYS_FLASH_1
+arch/arm/cpu/arm920t/at91/lowlevel_init.S:44:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/arm920t/start.S:80:	.word	CONFIG_SYS_TEXT_BASE
+arch/arm/cpu/lh7a40x/start.S:76:	.word	CONFIG_SYS_TEXT_BASE
+arch/powerpc/cpu/mpc85xx/cpu_init_early.c:44:	_mas2 = FSL_BOOKE_MAS2(CONFIG_SYS_TEXT_BASE, MAS2_I|MAS2_G);
+arch/powerpc/cpu/mpc85xx/cpu_init_early.c:72:	_mas2 = FSL_BOOKE_MAS2(CONFIG_SYS_TEXT_BASE, MAS2_I|MAS2_G);
+arch/powerpc/cpu/mpc86xx/start.S:915:	lis	r5, CONFIG_SYS_TEXT_BASE@h
+arch/powerpc/cpu/mpc86xx/start.S:916:	ori	r5,r5,CONFIG_SYS_TEXT_BASE@l
+arch/powerpc/lib/board.c:770:	bd->bi_flashoffset = CONFIG_SYS_TEXT_BASE + flash_size;
+arch/m68k/cpu/mcf5227x/start.S:47:#define ASM_DRAMINIT	(asm_dram_init - CONFIG_SYS_TEXT_BASE + CONFIG_SYS_INIT_RAM_ADDR)
+arch/m68k/cpu/mcf5227x/start.S:48:#define ASM_SBF_IMG_HDR	(asm_sbf_img_hdr - CONFIG_SYS_TEXT_BASE + CONFIG_SYS_INIT_RAM_ADDR)
+arch/m68k/cpu/mcf5227x/start.S:141:	.long	CONFIG_SYS_TEXT_BASE	/* image to be relocated at */
+arch/m68k/cpu/mcf5227x/start.S:333:	move.l	#(CONFIG_SYS_TEXT_BASE + 0x400), %a0
+arch/m68k/cpu/mcf5227x/start.S:367:	move.l	#CONFIG_SYS_TEXT_BASE, %d0
+arch/m68k/cpu/mcf5445x/start.S:47:#define ASM_DRAMINIT	(asm_dram_init - CONFIG_SYS_TEXT_BASE + CONFIG_SYS_INIT_RAM_ADDR)
+arch/m68k/cpu/mcf5445x/start.S:48:#define ASM_SBF_IMG_HDR	(asm_sbf_img_hdr - CONFIG_SYS_TEXT_BASE + CONFIG_SYS_INIT_RAM_ADDR)
+arch/m68k/cpu/mcf5445x/start.S:146:	.long	CONFIG_SYS_TEXT_BASE	/* image to be relocated at */
+arch/m68k/cpu/mcf5445x/start.S:361:	move.l	#(CONFIG_SYS_TEXT_BASE + 0x400), %a0
+arch/m68k/cpu/mcf52x2/start.S:60:#if defined(CONFIG_M5282) && (CONFIG_SYS_TEXT_BASE == CONFIG_SYS_INT_FLASH_BASE)
+arch/m68k/cpu/mcf52x2/start.S:61:.long	_start - CONFIG_SYS_TEXT_BASE
+arch/m68k/cpu/mcf52x2/start.S:109:	#if (CONFIG_SYS_TEXT_BASE == CONFIG_SYS_INT_FLASH_BASE)
+arch/m68k/cpu/mcf52x2/start.S:153:#if (CONFIG_SYS_TEXT_BASE == CONFIG_SYS_INT_FLASH_BASE)
+arch/m68k/cpu/mcf52x2/start.S:177:#endif /* (CONFIG_SYS_TEXT_BASE == CONFIG_SYS_INT_FLASH_BASE) */
+arch/m68k/cpu/mcf52x2/start.S:185:#if defined(CONFIG_M5282) && (CONFIG_SYS_TEXT_BASE == CONFIG_SYS_INT_FLASH_BASE)
+arch/m68k/cpu/mcf52x2/start.S:300:#if defined(DEBUG) && (CONFIG_SYS_TEXT_BASE != CONFIG_SYS_INT_FLASH_BASE) && \
+arch/x86/cpu/u-boot.lds:31:	. = CONFIG_SYS_TEXT_BASE;	/* Location of bootcode in flash */
+arch/x86/cpu/u-boot.lds:93:	.start16 : AT (CONFIG_SYS_TEXT_BASE + (CONFIG_SYS_MONITOR_LEN - RESET_SEG_SIZE + START_16)) { KEEP(*(.start16)); }
+arch/x86/cpu/u-boot.lds:96:	.resetvec : AT (CONFIG_SYS_TEXT_BASE + (CONFIG_SYS_MONITOR_LEN - RESET_SEG_SIZE + RESET_VEC_LOC)) { KEEP(*(.resetvec)); }
+arch/x86/cpu/start.S:141:	.long	multiboot_header - _x86boot_start + CONFIG_SYS_TEXT_BASE
+arch/x86/cpu/start.S:143:	.long	CONFIG_SYS_TEXT_BASE
+arch/x86/cpu/start.S:149:	.long	CONFIG_SYS_TEXT_BASE
+arch/x86/lib/relocate.c:75:		if (offset_ptr_rom >= (Elf32_Addr *)CONFIG_SYS_TEXT_BASE) {
+arch/x86/lib/relocate.c:82:			if (*offset_ptr_ram >= CONFIG_SYS_TEXT_BASE &&
+arch/x86/lib/relocate.c:84:					(CONFIG_SYS_TEXT_BASE + size)) {
+arch/microblaze/lib/board.c:130:	printf ("\tU-Boot Start:0x%08x\n", CONFIG_SYS_TEXT_BASE);
+arch/blackfin/config.mk:80:ifneq ($(CONFIG_SYS_TEXT_BASE),)
+arch/blackfin/config.mk:81:$(error do not set CONFIG_SYS_TEXT_BASE for Blackfin boards)
+arch/sh/lib/board.c:96:	mem_malloc_init(CONFIG_SYS_TEXT_BASE - GENERATED_GBL_DATA_SIZE -
+arch/sh/config.mk:32:PLATFORM_LDFLAGS += -e $(CONFIG_SYS_TEXT_BASE) --defsym reloc_dst=$(CONFIG_SYS_TEXT_BASE)
+arch/sparc/include/asm/asmmacro.h:36:	sethi	%hi(trap_setup+(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE)), %l4; \
+arch/sparc/include/asm/asmmacro.h:37:	jmpl	%l4 + %lo(trap_setup+(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE)), %l6;
+arch/sparc/cpu/leon2/Makefile:48:	-DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE) -I$(TOPDIR)/include \
+arch/sparc/cpu/leon2/prom.c:53:	(CONFIG_SYS_PROM_OFFSET-phys_base)+PAGE_OFFSET-CONFIG_SYS_TEXT_BASE ) \
+arch/sparc/cpu/leon2/prom.c:55:#define __phy(x) ((void *)(((unsigned long)(x))-PROM_OFFS+CONFIG_SYS_PROM_OFFSET-CONFIG_SYS_TEXT_BASE))
+arch/sparc/cpu/leon2/start.S:456:	set	(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE), %o2
+arch/sparc/cpu/leon3/Makefile:48:	-DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE) -I$(TOPDIR)/include \
+arch/sparc/cpu/leon3/prom.c:57:	(CONFIG_SYS_PROM_OFFSET-phys_base)+PAGE_OFFSET-CONFIG_SYS_TEXT_BASE ) \
+arch/sparc/cpu/leon3/prom.c:59:#define __phy(x) ((void *)(((unsigned long)(x))-PROM_OFFS+CONFIG_SYS_PROM_OFFSET-CONFIG_SYS_TEXT_BASE))
+arch/sparc/cpu/leon3/start.S:370:	sethi	%hi(leon3_snooping_avail+CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE), %o1
+arch/sparc/cpu/leon3/start.S:371:	st	%o0, [%lo(leon3_snooping_avail+CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE)+%o1]
+arch/sparc/cpu/leon3/start.S:411:	set	(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE), %o2
+board/renesas/sh7757lcr/spi-boot.c:101:	void (*_start)(void) = (void *)CONFIG_SYS_TEXT_BASE;
+board/samsung/smdk5250/mmc_boot.c:35:	copy_bl2(BL2_START_OFFSET, BL2_SIZE_BLOC_COUNT, CONFIG_SYS_TEXT_BASE);
+board/samsung/smdk5250/mmc_boot.c:44:	uboot = (void *)CONFIG_SYS_TEXT_BASE;
+board/samsung/smdk5250/lowlevel_init.S:30:	.word	CONFIG_SYS_TEXT_BASE
+board/samsung/goni/config.mk:34:CONFIG_SYS_TEXT_BASE = 0x34800000
+board/samsung/goni/lowlevel_init.S:42:	.word	CONFIG_SYS_TEXT_BASE
+board/samsung/smdkv310/mmc_boot.c:35:	copy_bl2(BL2_START_OFFSET, BL2_SIZE_BLOC_COUNT, CONFIG_SYS_TEXT_BASE);
+board/samsung/smdkv310/mmc_boot.c:44:	uboot = (void *)CONFIG_SYS_TEXT_BASE;
+board/samsung/smdkv310/lowlevel_init.S:40:	.word	CONFIG_SYS_TEXT_BASE
+board/samsung/smdkc100/config.mk:16:CONFIG_SYS_TEXT_BASE = 0x34800000
+board/samsung/smdkc100/lowlevel_init.S:37:	.word	CONFIG_SYS_TEXT_BASE
+board/samsung/smdk6400/smdk6400_nand_spl.c:35:	relocate_code(CONFIG_SYS_TEXT_BASE - TOTAL_MALLOC_LEN, NULL,
+board/samsung/smdk6400/smdk6400_nand_spl.c:36:			CONFIG_SYS_TEXT_BASE);
+board/samsung/smdk6400/config.mk:27:CONFIG_SYS_TEXT_BASE = $(RAM_TEXT)
+board/samsung/smdk6400/config.mk:29:CONFIG_SYS_TEXT_BASE = 0
+board/samsung/smdk6400/lowlevel_init.S:48:	.word	CONFIG_SYS_TEXT_BASE
+board/samsung/smdk2410/smdk2410_nand_spl.c:35:	relocate_code(CONFIG_SYS_TEXT_BASE - TOTAL_MALLOC_LEN, NULL,
+board/samsung/smdk2410/smdk2410_nand_spl.c:36:			CONFIG_SYS_TEXT_BASE);
+board/samsung/smdk2410/config.mk:27:CONFIG_SYS_TEXT_BASE = $(RAM_TEXT)
+board/samsung/smdk2410/config.mk:29:CONFIG_SYS_TEXT_BASE = 0
+board/samsung/smdk2410/lowlevel_init.S:130:	.word	CONFIG_SYS_TEXT_BASE
+board/samsung/origen/mmc_boot.c:35:	copy_bl2(BL2_START_OFFSET, BL2_SIZE_BLOC_COUNT, CONFIG_SYS_TEXT_BASE);
+board/samsung/origen/mmc_boot.c:44:	uboot = (void *)CONFIG_SYS_TEXT_BASE;
+board/samsung/origen/lowlevel_init.S:38:	.word	CONFIG_SYS_TEXT_BASE
+board/freescale/m5373evb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0
+board/freescale/m5275evb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xffe00000
+board/freescale/m52277evb/config.mk:27:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE)
+board/freescale/m54451evb/config.mk:27:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE)
+board/freescale/m5249evb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xffe00000
+board/freescale/m5253demo/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xFF800000
+board/freescale/mx31pdk/config.mk:2:CONFIG_SYS_TEXT_BASE = 0x87ec0000
+board/freescale/mx31pdk/config.mk:4:CONFIG_SYS_TEXT_BASE = 0x87f00000
+board/freescale/m5208evbe/config.mk:25:CONFIG_SYS_TEXT_BASE = 0
+board/freescale/m5271evb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xffe00000
+board/freescale/m5282evb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xFFE00000
+board/freescale/m5235evb/config.mk:25:/*CONFIG_SYS_TEXT_BASE = 0xFFC00000*/
+board/freescale/m5235evb/config.mk:28:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE)
+board/freescale/m5329evb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0
+board/freescale/m5253evbe/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xffe00000
+board/freescale/m547xevb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xFF800000
+board/freescale/m548xevb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xFF800000
+board/freescale/m5272c3/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xffe00000
+board/freescale/m53017evb/config.mk:25:CONFIG_SYS_TEXT_BASE = 0
+board/freescale/m54455evb/config.mk:27:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE)
+board/cm4008/config.mk:1:CONFIG_SYS_TEXT_BASE = 0x00f00000
+board/cobra5272/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xffe00000
+board/incaip/config.mk:29:CONFIG_SYS_TEXT_BASE = 0xB0000000
+board/incaip/config.mk:32:#CONFIG_SYS_TEXT_BASE = 0x80100000
+board/qemu-mips/config.mk:7:CONFIG_SYS_TEXT_BASE = 0xbfc00000
+board/qemu-mips/config.mk:10:#CONFIG_SYS_TEXT_BASE = 0x80001000
+board/vpac270/onenand.c:51:				(void *)CONFIG_SYS_TEXT_BASE);
+board/vpac270/onenand.c:52:	asm volatile("mov pc, %0" : : "r"(CONFIG_SYS_TEXT_BASE));
+board/xilinx/microblaze-generic/config.mk:30:CONFIG_SYS_TEXT_BASE = 0x29000000
+board/BuS/EB+MCF-EV123/config.mk:25:ifndef CONFIG_SYS_TEXT_BASE
+board/BuS/EB+MCF-EV123/config.mk:26:CONFIG_SYS_TEXT_BASE = 0xFE000000
+board/BuS/EB+MCF-EV123/EB+MCF-EV123.c:46:#if (CONFIG_SYS_TEXT_BASE ==  CONFIG_SYS_INT_FLASH_BASE)
+board/fads/fads.h:204:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+board/idmr/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xff800000
+board/esd/tasreg/config.mk:25:CONFIG_SYS_TEXT_BASE = 0xffc00000
+board/mpl/vcma9/lowlevel_init.S:217:	.word	CONFIG_SYS_TEXT_BASE
+board/keymile/km_arm/km_arm.c:517:	*size = CONFIG_SYS_TEXT_BASE - (1<<20);
+board/LaCie/edminiv2/config.mk:28:CONFIG_SYS_TEXT_BASE = 0xfff90000
+board/afeb9260/config.mk:1:CONFIG_SYS_TEXT_BASE = 0x21f00000
+board/ti/omap730p2/config.mk:25:CONFIG_SYS_TEXT_BASE = 0x11080000
+board/ti/omap730p2/lowlevel_init.S:44:	.word	CONFIG_SYS_TEXT_BASE	/* sdram load addr from config.mk */
+board/ti/omap5912osk/config.mk:30:CONFIG_SYS_TEXT_BASE = 0x11080000
+board/ti/omap5912osk/lowlevel_init.S:39:	.word	CONFIG_SYS_TEXT_BASE	/* sdram load addr from config.mk */
+board/ti/sdp3430/config.mk:33:CONFIG_SYS_TEXT_BASE = 0x80008000
+board/ti/omap2420h4/config.mk:17:CONFIG_SYS_TEXT_BASE = 0x80e80000
+board/ti/omap2420h4/config.mk:22:#CONFIG_SYS_TEXT_BASE = 0x40270000
+board/ti/omap2420h4/config.mk:26:#CONFIG_SYS_TEXT_BASE = 0x0
+board/ti/omap2420h4/config.mk:27:#CONFIG_SYS_TEXT_BASE = 0x08000000
+board/ti/omap2420h4/config.mk:28:#CONFIG_SYS_TEXT_BASE = 0x04000000
+board/ti/omap2420h4/lowlevel_init.S:34:	.word	CONFIG_SYS_TEXT_BASE	/* sdram load addr from config.mk */
+board/ti/tnetv107xevm/config.mk:20:CONFIG_SYS_TEXT_BASE = 0x83FC0000
+board/ti/omap1510inn/config.mk:25:CONFIG_SYS_TEXT_BASE = 0x11080000
+board/ti/omap1510inn/lowlevel_init.S:40:	.word	CONFIG_SYS_TEXT_BASE        /* sdram load addr from config.mk */
+board/isee/igep0030/config.mk:33:CONFIG_SYS_TEXT_BASE = 0x80008000
+board/isee/igep0020/config.mk:33:CONFIG_SYS_TEXT_BASE = 0x80008000
+board/karo/tx25/config.mk:2:CONFIG_SYS_TEXT_BASE = 0x810c0000
+board/karo/tx25/config.mk:4:CONFIG_SYS_TEXT_BASE = 0x81200000
+board/calao/tny_a9260/config.mk:1:CONFIG_SYS_TEXT_BASE = 0x23f00000
+board/calao/sbc35_a9g20/config.mk:1:CONFIG_SYS_TEXT_BASE = 0x23f00000
+board/pb1x00/README:29:Have this in mind when you compile u-boot. CONFIG_SYS_TEXT_BASE has
+board/pb1x00/config.mk:29:#CONFIG_SYS_TEXT_BASE = 0xbfc00000
+board/pb1x00/config.mk:32:CONFIG_SYS_TEXT_BASE = 0x83800000
+board/psyent/pci5441/config.mk:24:CONFIG_SYS_TEXT_BASE = 0x018e0000
+board/psyent/pk1c20/config.mk:24:CONFIG_SYS_TEXT_BASE = 0x01fc0000
+board/amcc/yucca/config.mk:29:CONFIG_SYS_TEXT_BASE = 0x07FD0000
+board/amcc/yucca/config.mk:31:CONFIG_SYS_TEXT_BASE = 0xfffb0000
+board/sx1/config.mk:19:CONFIG_SYS_TEXT_BASE = 0x11080000
+board/sx1/lowlevel_init.S:40:	.word	CONFIG_SYS_TEXT_BASE	 /* sdram load addr from config.mk */
+board/ns9750dev/config.mk:16:CONFIG_SYS_TEXT_BASE = 0x00780000
+board/ns9750dev/lowlevel_init.S:71:	.word	CONFIG_SYS_TEXT_BASE	@ sdram load addr from config.mk
+board/altera/nios2-generic/config.mk:25:#CONFIG_SYS_TEXT_BASE = do-not-use-me
+board/logicpd/zoom2/config.mk:33:CONFIG_SYS_TEXT_BASE = 0x80008000
+board/logicpd/zoom1/config.mk:33:CONFIG_SYS_TEXT_BASE = 0x80008000
+board/mx1ads/lowlevel_init.S:34:	.word	CONFIG_SYS_TEXT_BASE
+board/gaisler/grsim_leon2/config.mk:29:CONFIG_SYS_TEXT_BASE = 0x00000000
+board/gaisler/grsim_leon2/config.mk:32:#CONFIG_SYS_TEXT_BASE = 0x40000000
+board/gaisler/grsim_leon2/config.mk:34:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE) \
+board/gaisler/gr_ep2s60/config.mk:30:CONFIG_SYS_TEXT_BASE = 0x00000000
+board/gaisler/gr_ep2s60/config.mk:33:#CONFIG_SYS_TEXT_BASE = 0x40000000
+board/gaisler/gr_ep2s60/config.mk:35:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE) \
+board/gaisler/gr_xc3s_1500/config.mk:29:CONFIG_SYS_TEXT_BASE = 0x00000000
+board/gaisler/gr_xc3s_1500/config.mk:32:#CONFIG_SYS_TEXT_BASE = 0x40000000
+board/gaisler/gr_xc3s_1500/config.mk:34:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE) \
+board/gaisler/grsim/config.mk:29:CONFIG_SYS_TEXT_BASE = 0x00000000
+board/gaisler/grsim/config.mk:32:#CONFIG_SYS_TEXT_BASE = 0x40000000
+board/gaisler/grsim/config.mk:34:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE) \
+board/gaisler/gr_cpci_ax2000/config.mk:29:CONFIG_SYS_TEXT_BASE = 0x00000000
+board/gaisler/gr_cpci_ax2000/config.mk:32:#CONFIG_SYS_TEXT_BASE = 0x40000000
+board/gaisler/gr_cpci_ax2000/config.mk:35:#CONFIG_SYS_TEXT_BASE = 0x60000000
+board/gaisler/gr_cpci_ax2000/config.mk:37:PLATFORM_CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE) \
+board/davinci/dm6467evm/config.mk:2:CONFIG_SYS_TEXT_BASE = 0x81080000
+board/davinci/sonata/config.mk:39:CONFIG_SYS_TEXT_BASE = 0x81080000
+board/davinci/dm355leopard/config.mk:6:CONFIG_SYS_TEXT_BASE = 0x81080000
+board/davinci/sffsdr/config.mk:23:CONFIG_SYS_TEXT_BASE = 0x84000000
+board/davinci/dvevm/config.mk:39:CONFIG_SYS_TEXT_BASE = 0x81080000
+board/davinci/dm355evm/config.mk:11:CONFIG_SYS_TEXT_BASE = 0x81080000
+board/davinci/dm365evm/config.mk:11:CONFIG_SYS_TEXT_BASE = 0x81080000
+board/davinci/schmoogie/config.mk:39:CONFIG_SYS_TEXT_BASE = 0x81080000
+board/cm41xx/config.mk:1:CONFIG_SYS_TEXT_BASE = 0x00f00000
+board/dbau1x00/README:29:Have this in mind when you compile u-boot. CONFIG_SYS_TEXT_BASE has
+board/dbau1x00/config.mk:29:CONFIG_SYS_TEXT_BASE = 0xbfc00000
+board/dbau1x00/config.mk:32:#CONFIG_SYS_TEXT_BASE = 0x80100000
+board/matrix_vision/mvblx/config.mk:33:CONFIG_SYS_TEXT_BASE = 0x80008000
+board/dave/PPChameleonEVB/u-boot.lds:93:  ppcenv_assert = ASSERT(. < 0xFFFF8000, ".bss section too big, overlaps .ppcenv section. Please update your confguration: CONFIG_SYS_MONITOR_BASE, CONFIG_SYS_MONITOR_LEN and CONFIG_SYS_TEXT_BASE may need to be modified.");
+board/micronas/vct/config.mk:29:ifndef CONFIG_SYS_TEXT_BASE
+board/micronas/vct/config.mk:30:CONFIG_SYS_TEXT_BASE = 0x87000000
+board/gth2/config.mk:29:CONFIG_SYS_TEXT_BASE = 0
+board/gth2/config.mk:32:CONFIG_SYS_TEXT_BASE = 0xbfc10070
+board/gth2/config.mk:35:CONFIG_SYS_TEXT_BASE = 0xbfc30070
+board/gth2/config.mk:38:CONFIG_SYS_TEXT_BASE = 0x90000000
+board/apollon/config.mk:16:CONFIG_SYS_TEXT_BASE = 0x83e80000
+board/apollon/config.mk:21:#CONFIG_SYS_TEXT_BASE = 0x40270000
+board/apollon/config.mk:24:#CONFIG_SYS_TEXT_BASE = 0x0
+board/apollon/config.mk:25:#CONFIG_SYS_TEXT_BASE = 0x08000000
+board/apollon/lowlevel_init.S:49:	.word	CONFIG_SYS_TEXT_BASE	/* sdram load addr from config.mk */
+board/smdk2410:35:	relocate_code(CONFIG_SYS_TEXT_BASE - TOTAL_MALLOC_LEN, NULL,
+board/smdk2410:36:			CONFIG_SYS_TEXT_BASE);
+board/atmel/at91sam9m10g45ek/config.mk:1:CONFIG_SYS_TEXT_BASE = 0x73f00000
+board/cogent/README:90:Then edit the file "cogent/config.mk". Firstly, set CONFIG_SYS_TEXT_BASE to be
+board/cogent/README:94:the -CONFIG_SYS_TEXT_BASE=... option in CPPFLAGS).
+config.mk:200:ifneq ($(CONFIG_SYS_TEXT_BASE),)
+config.mk:201:CPPFLAGS += -DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE)
+config.mk:264:ifneq ($(CONFIG_SYS_TEXT_BASE),)
+config.mk:265:LDFLAGS_u-boot += -Ttext $(CONFIG_SYS_TEXT_BASE)
+config.mk:300:export	CONFIG_SYS_TEXT_BASE PLATFORM_CPPFLAGS PLATFORM_RELFLAGS CPPFLAGS CFLAGS AFLAGS
+doc/README.m68k:75:change CONFIG_SYS_TEXT_BASE in board/m5282evb/config.mk and CONFIG_SYS_MONITOR_BASE in
+doc/README.m68k:99:(CONFIG_SYS_TEXT_BASE) to the load address.
+doc/SPL/README.omap3:39:0x80100000: CONFIG_SYS_TEXT_BASE of U-Boot
+doc/SPL/README.omap3:45:0x80008000: CONFIG_SYS_TEXT_BASE of U-Boot
+doc/SPL/README.omap3:50:completing.  Note that CONFIG_SYS_TEXT_BASE must be clear of the areas that SPL
+doc/README.phytec.pcm030:8:		{ echo "CONFIG_SYS_TEXT_BASE = 0xFF000000"	>board/phytec/pcm030/config.tmp ; \
+doc/README.phytec.pcm030:12:	       { echo "CONFIG_SYS_TEXT_BASE = 0x00100000" >board/phycore_mpc5200b_tiny/\
+doc/README.COBRA5272:92:	in board/cobra5272/config.mk CONFIG_SYS_TEXT_BASE should be
+doc/README.COBRA5272:94:		CONFIG_SYS_TEXT_BASE = 0xffe00000
+doc/README.COBRA5272:131:	in board/cobra5272/config.mk CONFIG_SYS_TEXT_BASE should be
+doc/README.COBRA5272:133:		CONFIG_SYS_TEXT_BASE = 0x00020000
+doc/README.arm-relocation:44:if CONFIG_SYS_TEXT_BASE == relocation address! This prevents that uboot code
+doc/README.arm-relocation:61:If CONFIG_SYS_TEXT_BASE == relocation address, the copying of u-boot
+doc/README.arm-relocation:71:- maybe adapt CONFIG_SYS_TEXT_BASE (this must be checked from board maintainers)
+doc/README.arm-relocation:74:  on other boards if CONFIG_SYS_TEXT_BASE = relocation baseaddr, this saves
+doc/README.arm-relocation:88:  which inits the dram, cpu registers, reloacte itself to CONFIG_SYS_TEXT_BASE	and loads
+doc/README.arm-relocation:94:  relocate address = CONFIG_SYS_TEXT_BASE (not the same, as the
+doc/README.arm-relocation:95:  CONFIG_SYS_TEXT_BASE from the nand_spl code), then there is no need
+doc/README.hawkboard:53:  above, with the sole difference of the CONFIG_SYS_TEXT_BASE being
+doc/README.ARM-memory-map:12:_armboot_start contains the value of CONFIG_SYS_TEXT_BASE (0xA07E0000); it seems
+doc/README.ARM-memory-map:13:CONFIG_SYS_TEXT_BASE and _armboot_start are both used for the same purpose in
+drivers/mtd/spi/spi_spl_load.c:51:		       (void *) CONFIG_SYS_TEXT_BASE);
+drivers/mtd/spi/spi_spl_load.c:56:	uboot = (void *) CONFIG_SYS_TEXT_BASE;
+include/autoconf.mk:50:CONFIG_SYS_TEXT_BASE=0
+include/configs/scb9328.h:128:#define CONFIG_SYS_TEXT_BASE	0x10000000
+include/configs/acadia.h:38:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/acadia.h:39:#define CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/quantum.h:42:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/qi_lb60.h:150:#define CONFIG_SYS_TEXT_BASE	0x80100000
+include/configs/qi_lb60.h:151:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/FLAGADM.h:40:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/TQM85xx.h:45:#define CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/TQM85xx.h:47:#define CONFIG_SYS_TEXT_BASE	0xfffc0000
+include/configs/TQM85xx.h:84: * to more than 256 KB. Please adjust CONFIG_SYS_TEXT_BASE if necessary.
+include/configs/TQM85xx.h:232:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor	*/
+include/configs/TQM85xx.h:255:#define CONFIG_SYS_MONITOR_LEN		(~CONFIG_SYS_TEXT_BASE + 1)/* Reserved for Monitor	*/
+include/configs/TQM85xx.h:659:				"uboot_addr="MK_STR(CONFIG_SYS_TEXT_BASE)"\0"
+include/configs/omap5_evm.h:269:#define CONFIG_SYS_TEXT_BASE		0x80E80000
+include/configs/AMX860.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/mx51evk.h:36:#define CONFIG_SYS_TEXT_BASE	0x97800000
+include/configs/mcx.h:48:#define CONFIG_SYS_TEXT_BASE		0x80008000
+include/configs/mcx.h:353:#define CONFIG_SYS_NAND_U_BOOT_START   CONFIG_SYS_TEXT_BASE
+include/configs/HIDDEN_DRAGON.h:45:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/HIDDEN_DRAGON.h:134:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/debris.h:33:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/debris.h:207:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/adp-ag102.h:42:#define CONFIG_SYS_TEXT_BASE	0x04200000
+include/configs/adp-ag102.h:44:#define CONFIG_SYS_TEXT_BASE	0x00000000
+include/configs/CU824.h:48:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/CU824.h:114:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/ASH405.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/actux2.h:123:#define CONFIG_SYS_TEXT_BASE		0x50000000
+include/configs/dkb.h:41:#define CONFIG_SYS_INIT_SP_ADDR		(CONFIG_SYS_TEXT_BASE - 0x00200000)
+include/configs/sh7763rdp.h:60:#define CONFIG_SYS_TEXT_BASE	0x8FFC0000
+include/configs/MPC8266ADS.h:36:   !!  To make it work for the default, the CONFIG_SYS_TEXT_BASE define in	      !!
+include/configs/MPC8266ADS.h:56:#define	CONFIG_SYS_TEXT_BASE	0xfe000000
+include/configs/MPC8266ADS.h:423:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/flea3.h:49:#define CONFIG_SYS_TEXT_BASE	0xA0000000
+include/configs/RBC823.h:42:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/xpedite550x.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/xpedite550x.h:43:#define CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/xpedite550x.h:157:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/dbau1x00.h:188:#define	CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/integratorcp.h:45:#define CONFIG_SYS_TEXT_BASE		0x01000000
+include/configs/ISPAN.h:36:#define	CONFIG_SYS_TEXT_BASE	0xFE7A0000
+include/configs/ISPAN.h:173:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/cmi_mpc5xx.h:41:#define	CONFIG_SYS_TEXT_BASE	0x02000000	/* Boot from flash at location 0x00000000 */
+include/configs/cmi_mpc5xx.h:147:#define	CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_FLASH_BASE	/* CONFIG_SYS_TEXT_BASE is defined in the board config.mk file.	*/
+include/configs/P1023RDS.h:39:#define CONFIG_SYS_TEXT_BASE_SPL	0xfff00000
+include/configs/P1023RDS.h:40:#define CONFIG_SYS_TEXT_BASE		0x11001000
+include/configs/P1023RDS.h:43:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE_SPL /* start of monitor */
+include/configs/P1023RDS.h:46:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/P1023RDS.h:50:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/P1023RDS.h:51:#define CONFIG_SYS_TEXT_BASE	0xeff80000
+include/configs/P1023RDS.h:55:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8536DS.h:40:#define CONFIG_SYS_TEXT_BASE_SPL 0xfff00000
+include/configs/MPC8536DS.h:41:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE_SPL /* start of monitor */
+include/configs/MPC8536DS.h:44:#define CONFIG_SYS_TEXT_BASE	0xf8f82000
+include/configs/MPC8536DS.h:50:#define CONFIG_SYS_TEXT_BASE	0xf8f80000
+include/configs/MPC8536DS.h:56:#define CONFIG_SYS_TEXT_BASE	0xf8f80000
+include/configs/MPC8536DS.h:60:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8536DS.h:61:#define CONFIG_SYS_TEXT_BASE	0xeff80000
+include/configs/MPC8536DS.h:69:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8536DS.h:803:	"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8536DS.h:804:	"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8536DS.h:805:	"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/MPC8536DS.h:806:	"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8536DS.h:807:	"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/pf5200.h:47:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/pf5200.h:48:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/pf5200.h:125:#if (CONFIG_SYS_TEXT_BASE == 0xFF000000)	/* Boot low with 16 MB Flash */
+include/configs/pf5200.h:129:#if (CONFIG_SYS_TEXT_BASE == 0xFF800000)	/* Boot low with  8 MB Flash */
+include/configs/pf5200.h:228:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/W7OLMC.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/SPD823TS.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFF000000
+include/configs/RPXlite_DW.h:54:#define	CONFIG_SYS_TEXT_BASE	0xff000000
+include/configs/vision2.h:29:#define CONFIG_SYS_TEXT_BASE	0x97800000
+include/configs/MPC8610HPCD.h:22:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/MPC8610HPCD.h:190:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8610HPCD.h:426:#define CONFIG_SYS_DBAT6U_EARLY	(CONFIG_SYS_TEXT_BASE | BATU_BL_1M | BATU_VS | BATU_VP)
+include/configs/MPC8610HPCD.h:597:	"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8610HPCD.h:598:	"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8610HPCD.h:599:	"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/MPC8610HPCD.h:600:	"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8610HPCD.h:601:	"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/zmx25.h:33:#define CONFIG_SYS_TEXT_BASE		0xA0000000
+include/configs/mx53evk.h:107:#define CONFIG_SYS_TEXT_BASE    0x77800000
+include/configs/snapper9260.h:34:#define CONFIG_SYS_TEXT_BASE		0x20000000
+include/configs/PM826.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/PM826.h:43:#define CONFIG_SYS_TEXT_BASE	0xFF000000	/* Standard: boot 64-bit flash */
+include/configs/PM826.h:305:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/mucmc52.h:38:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/mucmc52.h:39:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/CPCI405DT.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/dvlhost.h:130:#define CONFIG_SYS_TEXT_BASE		0x50000000
+include/configs/PM828.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/PM828.h:43:#define CONFIG_SYS_TEXT_BASE	0x40000000	/* Standard: boot 64-bit flash */
+include/configs/PM828.h:299:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/cpuat91.h:33:#define CONFIG_SYS_TEXT_BASE		0x21F00000
+include/configs/cpuat91.h:36:#define CONFIG_SYS_TEXT_BASE		0
+include/configs/TK885D.h:43:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/CPU86.h:41:#define CONFIG_SYS_TEXT_BASE	0xFF800000
+include/configs/CPU86.h:43:#define	CONFIG_SYS_TEXT_BASE	0xFF000000
+include/configs/CPU86.h:310:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/RPXClassic.h:45:#define	CONFIG_SYS_TEXT_BASE	0xff000000
+include/configs/MPC8349EMDS.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC8349EMDS.h:206:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/pm9g45.h:51:#define CONFIG_SYS_TEXT_BASE		0x73f00000
+include/configs/SIMPC8313.h:45:#define CONFIG_SYS_TEXT_BASE	0x00100000 /* CONFIG_SYS_NAND_U_BOOT_DST */
+include/configs/SIMPC8313.h:46:#define CONFIG_SYS_TEXT_BASE_SPL 0xfff00000
+include/configs/SIMPC8313.h:49:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE_SPL /* start of monitor */
+include/configs/SIMPC8313.h:51:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/SIMPC8313.h:548:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; " \
+include/configs/SIMPC8313.h:549:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/SIMPC8313.h:550:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; " \
+include/configs/SIMPC8313.h:551:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; " \
+include/configs/SIMPC8313.h:552:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0" \
+include/configs/CPCI2DP.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/vpac270.h:30:#define	CONFIG_SYS_TEXT_BASE	0xa0000000
+include/configs/hammerhead.h:145:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/mimc200.h:164:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/p3p440.h:43:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/MVSMR.h:35:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MVSMR.h:36:#define CONFIG_SYS_TEXT_BASE	0xFF800000
+include/configs/MVSMR.h:182:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/MVSMR.h:214:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/atc.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFF000000
+include/configs/atc.h:257:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/P1010RDB.h:41:#define CONFIG_SYS_TEXT_BASE		0x11000000
+include/configs/P1010RDB.h:47:#define CONFIG_SYS_TEXT_BASE		0x11000000
+include/configs/P1010RDB.h:54:#define CONFIG_SYS_TEXT_BASE_SPL	0xff800000
+include/configs/P1010RDB.h:56:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE_SPL
+include/configs/P1010RDB.h:58:#define CONFIG_SYS_TEXT_BASE		0x11001000
+include/configs/P1010RDB.h:65:#define CONFIG_SYS_TEXT_BASE		0x11000000
+include/configs/P1010RDB.h:69:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/P1010RDB.h:70:#define CONFIG_SYS_TEXT_BASE		0xeff80000
+include/configs/P1010RDB.h:78:#define CONFIG_SYS_MONITOR_BASE CONFIG_SYS_TEXT_BASE    /* start of monitor */
+include/configs/stxgp3.h:46:#define	CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/stxgp3.h:102:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor	*/
+include/configs/MPC8540ADS.h:48:#define	CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/MPC8540ADS.h:139:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/ap325rxa.h:65:#define CONFIG_SYS_TEXT_BASE	0x8FFC0000
+include/configs/Sandpoint8245.h:42:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/Sandpoint8245.h:133:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/actux4.h:128:#define CONFIG_SYS_TEXT_BASE		0x50000000
+include/configs/top9000.h:46: * Warning: changing CONFIG_SYS_TEXT_BASE requires
+include/configs/top9000.h:49:#define CONFIG_SYS_TEXT_BASE		0x20000000	/* start of SDRAM */
+include/configs/u8500_href.h:210:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/u8500_href.h:211:#define CONFIG_SYS_TEXT_BASE            0x0
+include/configs/DASA_SIM.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/smdk2410.h:41://#define CONFIG_SYS_TEXT_BASE	0x0
+include/configs/sequoia.h:45:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/sequoia.h:46:#define CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/sequoia.h:60: * Also set CONFIG_SYS_TEXT_BASE to 0xFFF80000 in board/amcc/sequoia/config.mk in this case
+include/configs/ipek01.h:40:#define	CONFIG_SYS_TEXT_BASE	0xfc000000
+include/configs/ipek01.h:272:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/EB+MCF-EV123.h:173:#if (CONFIG_SYS_TEXT_BASE !=  CONFIG_SYS_INT_FLASH_BASE)
+include/configs/EB+MCF-EV123.h:174:#define CONFIG_SYS_MONITOR_BASE	(CONFIG_SYS_TEXT_BASE + 0x400)
+include/configs/EB+MCF-EV123.h:176:#define CONFIG_SYS_MONITOR_BASE	(CONFIG_SYS_TEXT_BASE + 0x418) /* 24 Byte for CFM-Config */
+include/configs/rsk7203.h:57:#define CONFIG_SYS_TEXT_BASE	0x0C7C0000
+include/configs/MIP405.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/Adder.h:35:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/Adder.h:132:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/P3G4.h:45:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/P3G4.h:200:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/xpedite537x.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/xpedite537x.h:43:#define CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/xpedite537x.h:167:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/cam_enc_4xx.h:234:#define CONFIG_SYS_TEXT_BASE		0x81080000
+include/configs/omap3_logic.h:39:#define CONFIG_SYS_TEXT_BASE	0x80400000
+include/configs/mx35pdk.h:39:#define CONFIG_SYS_TEXT_BASE	0xA0000000
+include/configs/hmi1001.h:36:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/hmi1001.h:37:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/hmi1001.h:84:#if (CONFIG_SYS_TEXT_BASE == 0xFFF00000) /* Boot low */
+include/configs/hmi1001.h:153:#define CONFIG_ENV_ADDR		(CONFIG_SYS_TEXT_BASE+0x40000) /* second sector */
+include/configs/hmi1001.h:207:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/inka4x0.h:40: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/inka4x0.h:44:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/inka4x0.h:45:#define CONFIG_SYS_TEXT_BASE	0xFFE00000	/* Standard: boot low */
+include/configs/inka4x0.h:115:#if (CONFIG_SYS_TEXT_BASE == 0xFFE00000)		/* Boot low */
+include/configs/inka4x0.h:223:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/zeus.h:37:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/mpq101.h:181:#define CONFIG_ENV_ADDR         (CONFIG_SYS_TEXT_BASE - CONFIG_ENV_SIZE)
+include/configs/mpq101.h:182:#define CONFIG_SYS_MONITOR_BASE CONFIG_SYS_TEXT_BASE /* start of monitor */
+include/configs/mpq101.h:183:#define CONFIG_SYS_TEXT_BASE    0xfffc0800
+include/configs/WUH405.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/pm9261.h:53:#define CONFIG_SYS_TEXT_BASE	0
+include/configs/taishan.h:37:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/MERGERBOX.h:36:#define CONFIG_SYS_TEXT_BASE	0xFC000000
+include/configs/MERGERBOX.h:127:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/MERGERBOX.h:156:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/MERGERBOX.h:569:	"uboota=" MK_STR(CONFIG_SYS_TEXT_BASE) "\0"\
+include/configs/csb472.h:43:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/csb472.h:251:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/enbw_cmc.h:314:#define CONFIG_SYS_TEXT_BASE		0x60000000
+include/configs/enbw_cmc.h:315:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/gr_cpci_ax2000.h:272:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/gr_cpci_ax2000.h:289:#define UN_RELOC(address) (address-(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE))
+include/configs/LANTEC.h:43:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/xpedite520x.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/xpedite520x.h:43:#define CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/xpedite520x.h:139:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/KUP4K.h:41:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/MHPC.h:46:#define	CONFIG_SYS_TEXT_BASE	0xfe000000
+include/configs/omap3_evm.h:126:#define CONFIG_SYS_NAND_U_BOOT_START   CONFIG_SYS_TEXT_BASE
+include/configs/origen.h:45:#define CONFIG_SYS_TEXT_BASE		0x43E00000
+include/configs/CPCI4052.h:42:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/mx53ard.h:97:#define CONFIG_SYS_TEXT_BASE    0x77800000
+include/configs/incaip.h:144:#define	CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/manroland/common.h:106:	"update=protect off " xstr(CONFIG_SYS_TEXT_BASE) " +${filesize};"		\
+include/configs/manroland/common.h:107:		"erase " xstr(CONFIG_SYS_TEXT_BASE) " +${filesize};"		\
+include/configs/manroland/common.h:108:		"cp.b ${u-boot_addr_r} " xstr(CONFIG_SYS_TEXT_BASE) 		\
+include/configs/manroland/common.h:110:		"protect on " xstr(CONFIG_SYS_TEXT_BASE) " +${filesize}\0"		\
+include/configs/manroland/mpc5200-common.h:45:#if (CONFIG_SYS_TEXT_BASE == 0xFFF00000) /* Boot low */
+include/configs/manroland/mpc5200-common.h:91:#define CONFIG_ENV_ADDR		(CONFIG_SYS_TEXT_BASE+0x40000) /* second sector */
+include/configs/manroland/mpc5200-common.h:142:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/AR405.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/AR405.h:186:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/AR405.h:187:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/TOP860.h:57:#define	CONFIG_SYS_TEXT_BASE	0x80000000
+include/configs/TOP860.h:214:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/PMC405.h:35:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/PMC405.h:196:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/PMC405.h:197:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/gw8260.h:53:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/gw8260.h:88: * it (in MBytes)? This must contain CONFIG_SYS_TEXT_BASE.
+include/configs/adp-ag101.h:43:#define CONFIG_SYS_TEXT_BASE	0x03200000
+include/configs/adp-ag101.h:45:#define CONFIG_SYS_TEXT_BASE	0x00000000
+include/configs/DB64460.h:61:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/dlvision-10g.h:31:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/luan.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFB0000
+include/configs/ADCIOP.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFFFD0000
+include/configs/pcm030.h:46: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/pcm030.h:51:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/pcm030.h:52:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/pcm030.h:83:#if (CONFIG_SYS_TEXT_BASE == 0xFF000000)	/* Boot low */
+include/configs/pcm030.h:232:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/quad100hd.h:37:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/quad100hd.h:178:#define CONFIG_SYS_MONITOR_BASE	(CONFIG_SYS_TEXT_BASE)
+include/configs/quad100hd.h:210:#define CONFIG_ENV_ADDR		(CONFIG_SYS_TEXT_BASE - CONFIG_ENV_SECT_SIZE)
+include/configs/HWW1U1A.h:142:#define CONFIG_SYS_TEXT_BASE		0xeff80000 /* Start of U-Boot image */
+include/configs/HWW1U1A.h:143:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/EVB64260.h:45:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/imx31_litekit.h:42:#define CONFIG_SYS_TEXT_BASE	0xa0000000
+include/configs/omap4_common.h:258:#define CONFIG_SYS_TEXT_BASE		0x80E80000
+include/configs/jadecpu.h:32:#define CONFIG_SYS_TEXT_BASE	0x10000000
+include/configs/ap_sh4a_4a.h:34:#define CONFIG_SYS_TEXT_BASE 0x8BFC0000
+include/configs/sc3.h:65:#define	CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/sc3.h:381:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* Start of U-Boot	*/
+include/configs/lwmon5.h:40:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/lwmon5.h:41:#define CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/lwmon5.h:58:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE	/* Start of U-Boot	*/
+include/configs/MPC8308RDB.h:36:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC8308RDB.h:206:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE /* start of monitor */
+include/configs/mgcoge3ne.h:37:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/s5pc210_universal.h:48:#define CONFIG_SYS_TEXT_BASE		0x44800000
+include/configs/VOM405.h:38:#define	CONFIG_SYS_TEXT_BASE	0xFFFC8000
+include/configs/VOM405.h:184:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/VOM405.h:185:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/at91sam9263ek.h:37:#define CONFIG_SYS_TEXT_BASE		0x21F00000
+include/configs/at91sam9263ek.h:39:#define CONFIG_SYS_TEXT_BASE		0x0000000
+include/configs/atstk1002.h:172:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/BSC9131RDB.h:39:#define CONFIG_SYS_TEXT_BASE		0x11000000
+include/configs/BSC9131RDB.h:44:#define CONFIG_SYS_MONITOR_BASE CONFIG_SYS_TEXT_BASE    /* start of monitor */
+include/configs/PCI405.h:42:#define	CONFIG_SYS_TEXT_BASE	0xFFFD0000
+include/configs/CRAYL1.h:44:#define	CONFIG_SYS_TEXT_BASE	0xFFFD0040
+include/configs/CRAYL1.h:167:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/linkstation.h:24: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/linkstation.h:35:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/linkstation.h:36:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/linkstation.h:235:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/linkstation.h:258: * Change CONFIG_SYS_TEXT_BASE in bord/linkstation/config.mk to get a RAM build
+include/configs/pxa255_idp.h:45:#define	CONFIG_SYS_TEXT_BASE	0x0
+include/configs/tam3517-common.h:31:#define CONFIG_SYS_TEXT_BASE 0x80008000
+include/configs/tam3517-common.h:280:#define CONFIG_SYS_NAND_U_BOOT_START	CONFIG_SYS_TEXT_BASE
+include/configs/galaxy5200.h:47: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/galaxy5200.h:53:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/galaxy5200.h:56:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/galaxy5200.h:57:#define CONFIG_SYS_TEXT_BASE	0xFFF00000	/* Standard: boot high */
+include/configs/galaxy5200.h:91:#if (CONFIG_SYS_TEXT_BASE == 0xFE000000)		/* Boot low */
+include/configs/galaxy5200.h:216:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/M52277EVB.h:234:#	define CONFIG_SYS_MONITOR_BASE	(CONFIG_SYS_TEXT_BASE + 0x400)
+include/configs/ms7722se.h:58:#define CONFIG_SYS_TEXT_BASE	0x8FFC0000
+include/configs/colibri_pxa270.h:29:#define	CONFIG_SYS_TEXT_BASE		0x0
+include/configs/adp-ag101p.h:43:#define CONFIG_SYS_TEXT_BASE	0x03200000
+include/configs/adp-ag101p.h:45:#define CONFIG_SYS_TEXT_BASE	0x00000000
+include/configs/MPC837XERDB.h:33:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC837XERDB.h:233:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE /* start of monitor */
+include/configs/MPC837XERDB.h:729:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; " \
+include/configs/MPC837XERDB.h:730:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC837XERDB.h:731:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; " \
+include/configs/MPC837XERDB.h:732:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; " \
+include/configs/MPC837XERDB.h:733:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0" \
+include/configs/MOUSSE.h:52:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/sbc8560.h:49:#define	CONFIG_SYS_TEXT_BASE	0xfffc0000
+include/configs/sbc8560.h:310:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE /* start of monitor	*/
+include/configs/redwood.h:36:#define	CONFIG_SYS_TEXT_BASE	0xfffb0000
+include/configs/ZUMA.h:44:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/da850evm.h:46:#define CONFIG_SYS_TEXT_BASE		0xc1080000
+include/configs/MPC8560ADS.h:49:#define	CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/MPC8560ADS.h:136:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/M54451EVB.h:246:#	define CONFIG_SYS_MONITOR_BASE	(CONFIG_SYS_TEXT_BASE + 0x400)
+include/configs/PCIPPC2.h:46:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/PCIPPC2.h:122:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/ICU862.h:42:#define	CONFIG_SYS_TEXT_BASE	0x40F00000
+include/configs/ICU862.h:212:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/MPC8315ERDB.h:35:#define CONFIG_SYS_TEXT_BASE	0x00100000 /* CONFIG_SYS_NAND_U_BOOT_DST */
+include/configs/MPC8315ERDB.h:36:#define CONFIG_SYS_TEXT_BASE_SPL 0xfff00000
+include/configs/MPC8315ERDB.h:38:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE_SPL /* start of monitor */
+include/configs/MPC8315ERDB.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8315ERDB.h:43:#define CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC8315ERDB.h:47:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/taihu.h:35:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/xpedite517x.h:44:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/xpedite517x.h:173:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/xpedite517x.h:512:#define CONFIG_SYS_DBAT6U_EARLY	(CONFIG_SYS_TEXT_BASE			|\
+include/configs/rsk7264.h:43:#define CONFIG_SYS_TEXT_BASE		0x0CFC0000
+include/configs/rsk7264.h:48:#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_TEXT_BASE - 0x100000)
+include/configs/FPS850L.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/rsk7269.h:42:#define CONFIG_SYS_TEXT_BASE		0x0DFC0000
+include/configs/rsk7269.h:47:#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_TEXT_BASE - 0x100000)
+include/configs/favr-32-ezkit.h:174:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/TQM860M.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/sh7785lcr.h:65:#define CONFIG_SYS_TEXT_BASE		0x8FF80000
+include/configs/sh7785lcr.h:75:#define CONFIG_SYS_TEXT_BASE		0x0FF80000
+include/configs/tb0229.h:143:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/TQM850L.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/virtlab2.h:40:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/utx8245.h:53:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/utx8245.h:180:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/grsim_leon2.h:237:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/grsim_leon2.h:254:#define UN_RELOC(address) (address-(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE))
+include/configs/sh7757lcr.h:36:#define CONFIG_SYS_TEXT_BASE	0x8ef80000
+include/configs/mpc8308_p1m.h:36:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/mpc8308_p1m.h:37:#define CONFIG_SYS_TEXT_BASE	0xFC000000
+include/configs/mpc8308_p1m.h:215:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE /* start of monitor */
+include/configs/ppmc8260.h:37:#define	CONFIG_SYS_TEXT_BASE	0xfe000000
+include/configs/ppmc8260.h:81: * it (in MBytes)? This must contain CONFIG_SYS_TEXT_BASE from board/ppmc8260/config.mk
+include/configs/spc1920.h:29:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/spc1920.h:164:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/FADS860T.h:23:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/ADS860.h:23:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/korat.h:42:#define CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/korat.h:44:#define	CONFIG_SYS_TEXT_BASE	0xF7F60000
+include/configs/korat.h:73:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/SBC8540.h:51:#define	CONFIG_SYS_TEXT_BASE	0xfffc0000
+include/configs/SBC8540.h:310:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor	*/
+include/configs/omap3_overo.h:291:#define CONFIG_SYS_TEXT_BASE		0x80008000
+include/configs/omap3_overo.h:342:#define CONFIG_SYS_NAND_U_BOOT_START	CONFIG_SYS_TEXT_BASE
+include/configs/efikamx.h:45:#define CONFIG_SYS_TEXT_BASE		0x97800000
+include/configs/W7OLMG.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/spear-common.h:31:#define CONFIG_SYS_TEXT_BASE			0x00700000
+include/configs/spear-common.h:203:#define CONFIG_SYS_MONITOR_BASE			CONFIG_SYS_TEXT_BASE
+include/configs/qong.h:37:#define CONFIG_SYS_TEXT_BASE 0xa0000000
+include/configs/KUP4X.h:41:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/P2041RDB.h:35:#define CONFIG_RAMBOOT_TEXT_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/P2041RDB.h:48:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/P2041RDB.h:49:#define CONFIG_SYS_TEXT_BASE	0xeff80000
+include/configs/P2041RDB.h:224:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/P2041RDB.h:654:	"ubootaddr=" MK_STR(CONFIG_SYS_TEXT_BASE) "\0"		\
+include/configs/palmld.h:36:#define	CONFIG_SYS_TEXT_BASE	0x0
+include/configs/m28evk.h:108:#define	CONFIG_SYS_TEXT_BASE		0x40000100
+include/configs/ppmc7xx.h:52:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/ppmc7xx.h:246:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/TQM850M.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/R360MPI.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/omap3_pandora.h:234:#define CONFIG_SYS_TEXT_BASE		0x80008000
+include/configs/GEN860T.h:38:#define	CONFIG_SYS_TEXT_BASE		0x40000000
+include/configs/sbc8641d.h:46:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/sbc8641d.h:238:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/sbc8641d.h:478:#define CONFIG_SYS_DBAT6U_EARLY	(CONFIG_SYS_TEXT_BASE | BATU_BL_1M | BATU_VS | BATU_VP)
+include/configs/ep8248.h:34:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/ep8248.h:200:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/MPC8568MDS.h:36:#define	CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/MPC8568MDS.h:155:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/ima3-mx53.h:112:#define CONFIG_SYS_TEXT_BASE    0xf0001400 /* uboot in nor flash */
+include/configs/da830evm.h:45:#define CONFIG_SYS_TEXT_BASE		0xc1080000
+include/configs/qemu-mips.h:135:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/G2000.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/actux3.h:122:#define CONFIG_SYS_TEXT_BASE		0x50000000
+include/configs/p3mx.h:43:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/SXNI855T.h:67:#define	CONFIG_SYS_TEXT_BASE	0xF8000000
+include/configs/jornada.h:32:#define CONFIG_SYS_TEXT_BASE		0xC1F00000
+include/configs/iocon.h:31:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/TQM5200.h:41: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/TQM5200.h:47:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/TQM5200.h:48:#define CONFIG_SYS_TEXT_BASE	0xFC000000
+include/configs/TQM5200.h:228:#if (CONFIG_SYS_TEXT_BASE != 0xFFF00000)
+include/configs/TQM5200.h:516:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/TQM8272.h:40:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/TQM8272.h:357: * it (in MBytes)? This must contain CONFIG_SYS_TEXT_BASE from board/tqm8272/config.mk
+include/configs/TQM8272.h:497:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/PLU405.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/PLU405.h:269:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/PLU405.h:270:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/PPChameleonEVB.h:78:#define	CONFIG_SYS_TEXT_BASE	0xFFFB0000	/* Reserve 320 kB for Monitor */
+include/configs/mx53loco.h:118:#define CONFIG_SYS_TEXT_BASE    0x77800000
+include/configs/CPCI750.h:60:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/cogent_mpc8260.h:40:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/cogent_mpc8260.h:242:#define	CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/cogent_mpc8260.h:372:#define CONFIG_SYS_CMA_CS0_BASE	CONFIG_SYS_TEXT_BASE	/* EPROM */
+include/configs/versatile.h:180:#define CONFIG_SYS_TEXT_BASE		0x10000
+include/configs/versatile.h:185:#define CONFIG_SYS_TEXT_BASE		0x01000000
+include/configs/HUB405.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/ETX094.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/am335x_evm.h:157:#define CONFIG_SYS_TEXT_BASE		0x80800000
+include/configs/hymod.h:40:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/hymod.h:390:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/hymod.h:391:#define	CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/CPCI405AB.h:42:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/TOP5200.h:49: * allowed and functional CONFIG_SYS_TEXT_BASE values:
+include/configs/TOP5200.h:54:#define	CONFIG_SYS_TEXT_BASE	0xff000000
+include/configs/TOP5200.h:146:#if (CONFIG_SYS_TEXT_BASE == 0xFF000000)		/* Boot low with 16 MB Flash */
+include/configs/TOP5200.h:150:#   error "CONFIG_SYS_TEXT_BASE must be 0xff000000"
+include/configs/TOP5200.h:306:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/socrates.h:48:#define	CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/socrates.h:158:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor	*/
+include/configs/omap3_evm_common.h:306:#define CONFIG_SYS_TEXT_BASE		0x80100000
+include/configs/HH405.h:46:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/HH405.h:312:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/v38b.h:33:#define	CONFIG_SYS_TEXT_BASE		0xFF000000
+include/configs/v38b.h:235:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/TQM823M.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/TQM862L.h:42:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/cobra5272.h:109: * Please do not forget to modify the setting of CONFIG_SYS_TEXT_BASE
+include/configs/MPC8323ERDB.h:20:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC8323ERDB.h:149:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8323ERDB.h:524:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "\
+include/configs/MPC8323ERDB.h:525:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8323ERDB.h:526:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "\
+include/configs/MPC8323ERDB.h:527:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "\
+include/configs/MPC8323ERDB.h:528:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"\
+include/configs/uc100.h:43:#define	CONFIG_SYS_TEXT_BASE	0x40700000
+include/configs/balloon3.h:48:#define	CONFIG_SYS_TEXT_BASE		0x0
+include/configs/c2mon.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/TQM862M.h:42:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/tricorder.h:46:#define CONFIG_SYS_TEXT_BASE		0x80100000
+include/configs/tricorder.h:315:#define CONFIG_SYS_NAND_U_BOOT_START	CONFIG_SYS_TEXT_BASE
+include/configs/MPC86xADS.h:31:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/cm5200.h:34:#define	CONFIG_SYS_TEXT_BASE	0xfc000000
+include/configs/cm5200.h:175:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/astro_mcf5373l.h:79:#define CONFIG_SYS_TEXT_BASE		0x40020000
+include/configs/astro_mcf5373l.h:82:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/astro_mcf5373l.h:343:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/trats.h:49:#define CONFIG_SYS_TEXT_BASE		0x63300000
+include/configs/bubinga.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/mpr2.h:61:#define CONFIG_SYS_TEXT_BASE	0x8FFC0000
+include/configs/Alaska8220.h:34:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/Alaska8220.h:253:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/stxxtc.h:41:#define	CONFIG_SYS_TEXT_BASE	0x40F00000
+include/configs/Sandpoint8240.h:42:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/Sandpoint8240.h:163:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/EP88x.h:33:#define	CONFIG_SYS_TEXT_BASE	0xFC000000
+include/configs/EP88x.h:127:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/PATI.h:37:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/PATI.h:149:/* CONFIG_SYS_FLASH_BASE	*/ /* CONFIG_SYS_TEXT_BASE is defined in the board config.mk file.	*/
+include/configs/mx53smd.h:96:#define CONFIG_SYS_TEXT_BASE    0x77800000
+include/configs/PK1C20.h:67:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/VCMA9.h:45:#define CONFIG_SYS_TEXT_BASE	0x0
+include/configs/mecp5123.h:51:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/mecp5123.h:212:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE	/* Start of monitor */
+include/configs/TQM860L.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/omap3_evm_quick_nand.h:94:#define CONFIG_SYS_NAND_U_BOOT_START   CONFIG_SYS_TEXT_BASE
+include/configs/pm9263.h:53:#define CONFIG_SYS_TEXT_BASE	0
+include/configs/Total5200.h:48: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/Total5200.h:53:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/Total5200.h:54:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/Total5200.h:141:#if (CONFIG_SYS_TEXT_BASE == 0xFE000000)		/* Boot low */
+include/configs/Total5200.h:253:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/SCM.h:41:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/SCM.h:250: * it (in MBytes)? This must contain CONFIG_SYS_TEXT_BASE from board/tqm8260/config.mk
+include/configs/SCM.h:340:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/PMC405DE.h:31:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/PMC405DE.h:205:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/PMC405DE.h:206:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/coreboot.h:190:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/QS850.h:56:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/MPC8360ERDK.h:29:#define	CONFIG_SYS_TEXT_BASE	0xFF800000
+include/configs/MPC8360ERDK.h:163:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE /* start of monitor */
+include/configs/sbc8349.h:43:#define	CONFIG_SYS_TEXT_BASE	0xFF800000
+include/configs/sbc8349.h:178:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/makalu.h:42:#define	CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/io.h:31:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/jupiter.h:37: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/jupiter.h:41:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/jupiter.h:42:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/jupiter.h:192:#define CONFIG_ENV_ADDR		(CONFIG_SYS_TEXT_BASE + 0x40000) /* third sector */
+include/configs/jupiter.h:233:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/smdk6400.h:57:#if !defined(CONFIG_NAND_SPL) && (CONFIG_SYS_TEXT_BASE >= 0xc0000000)
+include/configs/IVML24.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFF000000
+include/configs/trizepsiv.h:47:#define	CONFIG_SYS_TEXT_BASE	0x0
+include/configs/p1_p2_rdb_pc.h:131:#define CONFIG_SYS_TEXT_BASE		0x11000000
+include/configs/p1_p2_rdb_pc.h:139:#define CONFIG_SYS_TEXT_BASE		0x11000000
+include/configs/p1_p2_rdb_pc.h:147:#define CONFIG_SYS_TEXT_BASE_SPL	0xff800000
+include/configs/p1_p2_rdb_pc.h:149:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE_SPL
+include/configs/p1_p2_rdb_pc.h:151:#define CONFIG_SYS_TEXT_BASE		0x11001000
+include/configs/p1_p2_rdb_pc.h:155:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/p1_p2_rdb_pc.h:156:#define CONFIG_SYS_TEXT_BASE		0xeff80000
+include/configs/p1_p2_rdb_pc.h:164:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/p1_p2_rdb_pc.h:878:	"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/p1_p2_rdb_pc.h:879:	"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/p1_p2_rdb_pc.h:880:	"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/p1_p2_rdb_pc.h:881:	"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/p1_p2_rdb_pc.h:882:	"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/FADS823.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/bluestone.h:35:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/bluestone.h:36:#define CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/Yukon8220.h:34:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/Yukon8220.h:264:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/ep8260.h:51:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/ep8260.h:102: * it (in MBytes)? This must contain CONFIG_SYS_TEXT_BASE from board/ep8260/config.mk
+include/configs/ep8260.h:437:#define CONFIG_SYS_MONITOR_BASE          CONFIG_SYS_TEXT_BASE
+include/configs/imx27lite-common.h:37:#define CONFIG_SYS_TEXT_BASE		0xc0000000
+include/configs/MVBLM7.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/MVBLM7.h:131:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/motionpro.h:40:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/motionpro.h:193:#if CONFIG_SYS_TEXT_BASE == 0x00100000
+include/configs/motionpro.h:195:#else /* CONFIG_SYS_TEXT_BASE != 0x00100000 */
+include/configs/motionpro.h:198:#endif /* CONFIG_SYS_TEXT_BASE == 0x00100000 */
+include/configs/motionpro.h:207:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/o2dnt.h:35:#define	CONFIG_SYS_TEXT_BASE	0xFF000000	/* boot low for 16 MiB boards */
+include/configs/o2dnt.h:103:#if (CONFIG_SYS_TEXT_BASE == 0xFF000000)		/* Boot low with 16 MB Flash */
+include/configs/o2dnt.h:106:#   error "CONFIG_SYS_TEXT_BASE must be 0xFF000000"
+include/configs/o2dnt.h:222:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/NETVIA.h:40:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/km8360.h:55:#define	CONFIG_SYS_TEXT_BASE	0xF0000000
+include/configs/SM850.h:41:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/ca9x4_ct_vxp.h:33:#define CONFIG_SYS_TEXT_BASE		0x60800000
+include/configs/AP1000.h:35:#define	CONFIG_SYS_TEXT_BASE	0x08000000
+include/configs/AP1000.h:159:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/cpu9260.h:64:#define CONFIG_SYS_TEXT_BASE           0x23f00000
+include/configs/cpu9260.h:66:#define CONFIG_SYS_TEXT_BASE           0x00000000
+include/configs/corenet_ds.h:32:#define CONFIG_RAMBOOT_TEXT_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/corenet_ds.h:38:#define CONFIG_SYS_SRIOBOOT_SLAVE_ADDR (CONFIG_SYS_TEXT_BASE & 0xfff00000)
+include/configs/corenet_ds.h:54:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/corenet_ds.h:55:#define CONFIG_SYS_TEXT_BASE	0xeff80000
+include/configs/corenet_ds.h:246:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/corenet_ds.h:739:	"ubootaddr=" MK_STR(CONFIG_SYS_TEXT_BASE) "\0"			\
+include/configs/km/km83xx-common.h:74:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE /* start of monitor */
+include/configs/km/km82xx-common.h:92:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/km/km_arm.h:69:#define CONFIG_SYS_TEXT_BASE	0x07d00000	/* code address before reloc */
+include/configs/ethernut5.h:32:#define CONFIG_SYS_TEXT_BASE	0x27000000	/* 16MB available */
+include/configs/ethernut5.h:67:#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_TEXT_BASE \
+include/configs/neo.h:32:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/gr_xc3s_1500.h:217:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/gr_xc3s_1500.h:234:#define UN_RELOC(address) (address-(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE))
+include/configs/microblaze-generic.h:64:/*#define	CONFIG_SYS_RESET_ADDRESS	CONFIG_SYS_TEXT_BASE*/
+include/configs/microblaze-generic.h:116: * CONFIG_SYS_TEXT_BASE = 0x1200_0000;
+include/configs/microblaze-generic.h:126: * 0x1200_0000	CONFIG_SYS_TEXT_BASE
+include/configs/eb_cpux9k2.h:47:#define CONFIG_SYS_TEXT_BASE 		0x00000000
+include/configs/cpci5200.h:48:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/cpci5200.h:49:#define CONFIG_SYS_TEXT_BASE	0xFFF00000	/* Standard: boot high */
+include/configs/cpci5200.h:129:#if (CONFIG_SYS_TEXT_BASE == 0xFF000000)	/* Boot low with 16 MB Flash */
+include/configs/cpci5200.h:133:#if (CONFIG_SYS_TEXT_BASE == 0xFF800000)	/* Boot low with  8 MB Flash */
+include/configs/cpci5200.h:242:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/MPC8548CDS.h:43:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8548CDS.h:44:#define CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/MPC8548CDS.h:208:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8548CDS.h:599:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "   \
+include/configs/MPC8548CDS.h:600:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	      \
+include/configs/MPC8548CDS.h:601:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; " \
+include/configs/MPC8548CDS.h:602:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "    \
+include/configs/MPC8548CDS.h:603:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"\
+include/configs/IPHASE4539.h:41:#define	CONFIG_SYS_TEXT_BASE	0xffb00000
+include/configs/IPHASE4539.h:196:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/FADS850SAR.h:37:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/pb1x00.h:106:#define	CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/io64.h:43:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/io64.h:44:#define CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/METROBOX.h:113:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/tegra2-common.h:185:#define CONFIG_SYS_TEXT_BASE	0x00108000
+include/configs/ea20.h:50:#define CONFIG_SYS_TEXT_BASE		0xc1080000
+include/configs/xpedite1000.h:43:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/xpedite1000.h:58:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/xpedite1000.h:266:#define CONFIG_UBOOT_ENV_ADDR	MK_STR(CONFIG_SYS_TEXT_BASE)
+include/configs/r2dplus.h:42:#define CONFIG_SYS_TEXT_BASE	0x0FFC0000
+include/configs/r2dplus.h:51:#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_TEXT_BASE - 0x100000)
+include/configs/MUSENKI.h:48:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/MUSENKI.h:120:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/MUSENKI.h:155:/* #define CONFIG_SYS_MONITOR_BASE        CONFIG_SYS_TEXT_BASE */
+include/configs/MPC8641HPCN.h:48:#define	CONFIG_SYS_TEXT_BASE	0xeff00000
+include/configs/MPC8641HPCN.h:241:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8641HPCN.h:600:#define CONFIG_SYS_DBAT6U_EARLY	(CONFIG_SYS_TEXT_BASE | BATU_BL_1M | BATU_VS | BATU_VP)
+include/configs/MPC8641HPCN.h:733:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8641HPCN.h:734:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8641HPCN.h:735:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/MPC8641HPCN.h:736:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8641HPCN.h:737:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/mx28evk.h:99:#define CONFIG_SYS_TEXT_BASE	0x40000100
+include/configs/CANBT.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/CANBT.h:132:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/CANBT.h:133:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/at91rm9200ek.h:44:#define CONFIG_SYS_TEXT_BASE 0x20100000
+include/configs/at91rm9200ek.h:46:#define CONFIG_SYS_TEXT_BASE 0x10000000
+include/configs/TQM866M.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/M5282EVB.h:172:#if (CONFIG_SYS_TEXT_BASE != CONFIG_SYS_INT_FLASH_BASE)
+include/configs/M5282EVB.h:175:#define CONFIG_SYS_MONITOR_BASE	(CONFIG_SYS_TEXT_BASE + 0x418)	/* 24 Byte for CFM-Config */
+include/configs/PN62.h:42:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/PN62.h:152:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/TQM855M.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/MPC8360EMDS.h:34:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC8360EMDS.h:198:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE /* start of monitor */
+include/configs/pdm360ng.h:52:#define	CONFIG_SYS_TEXT_BASE	0xF0000000
+include/configs/pdm360ng.h:272:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE	/* Start of monitor */
+include/configs/atstk1003.h:156:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/xilinx-ppc.h:31:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/at91sam9261ek.h:55:#define CONFIG_SYS_TEXT_BASE		0x21f00000
+include/configs/cm_t35.h:42:#define CONFIG_SYS_TEXT_BASE	0x80008000
+include/configs/dig297.h:49:#define CONFIG_SYS_TEXT_BASE	0x80008000
+include/configs/DP405.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFD0000
+include/configs/DP405.h:160:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/DP405.h:161:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/am3517_evm.h:359:#define CONFIG_SYS_NAND_U_BOOT_START	CONFIG_SYS_TEXT_BASE
+include/configs/am3517_evm.h:368:#define CONFIG_SYS_TEXT_BASE		0x80100000
+include/configs/canyonlands.h:51:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/canyonlands.h:52:#define CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/MBX.h:49:#define	CONFIG_SYS_TEXT_BASE	0xfe000000
+include/configs/IceCube.h:37: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/IceCube.h:43:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/IceCube.h:44:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/IceCube.h:132:#if (CONFIG_SYS_TEXT_BASE == 0xFF000000)		/* Boot low with 16 MB Flash */
+include/configs/IceCube.h:136:#if (CONFIG_SYS_TEXT_BASE == 0xFF800000)		/* Boot low with  8 MB Flash */
+include/configs/IceCube.h:283:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/tuxx1.h:42:#define	CONFIG_SYS_TEXT_BASE	0xF0000000
+include/configs/digsy_mtc.h:44: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/digsy_mtc.h:49:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/digsy_mtc.h:50:#define CONFIG_SYS_TEXT_BASE	0xFFF00000	/* Standard: boot high */
+include/configs/digsy_mtc.h:141:#if (CONFIG_SYS_TEXT_BASE == 0xFF000000)
+include/configs/digsy_mtc.h:362:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/canmb.h:37: * allowed and functional CONFIG_SYS_TEXT_BASE values:
+include/configs/canmb.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/canmb.h:84:#if (CONFIG_SYS_TEXT_BASE == 0xFE000000)		/* Boot low with 32 MB Flash */
+include/configs/canmb.h:88:#   error "CONFIG_SYS_TEXT_BASE must be 0xFE000000"
+include/configs/canmb.h:166:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/Rattler.h:36:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/Rattler.h:224:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/KAREF.h:47:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/CPC45.h:48:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/CPC45.h:126:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/aria.h:53:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/aria.h:304:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/smdkc100.h:207:#if !defined(CONFIG_NAND_SPL) && (CONFIG_SYS_TEXT_BASE >= 0xc0000000)
+include/configs/sorcery.h:34:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/sorcery.h:231:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/eXalion.h:43:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/eXalion.h:111:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/MPC8555CDS.h:40:#define	CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/MPC8555CDS.h:142:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/TQM885D.h:42:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/PMC440.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/PMC440.h:43:#define CONFIG_SYS_TEXT_BASE	0xFFF90000
+include/configs/PMC440.h:60:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/PMC440.h:68:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/MPC837XEMDS.h:32:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC837XEMDS.h:206:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE /* start of monitor */
+include/configs/OCRTC.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFD0000
+include/configs/JSE.h:49:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/NETTA.h:40:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/atstk1004.h:156:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/IDS8247.h:42:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/IDS8247.h:232: * it (in MBytes)? This must contain CONFIG_SYS_TEXT_BASE from board/ids8247/config.mk
+include/configs/IDS8247.h:307:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/integratorap.h:40:#define CONFIG_SYS_TEXT_BASE		0x01000000
+include/configs/nhk8815.h:85:#define CONFIG_SYS_TEXT_BASE    0x00000000
+include/configs/nhk8815.h:86:#define CONFIG_SYS_INIT_SP_ADDR (CONFIG_SYS_TEXT_BASE + (1<<20))
+include/configs/gplugd.h:58:#define	CONFIG_SYS_TEXT_BASE	0x00f00000
+include/configs/gplugd.h:64:#define CONFIG_SYS_INIT_SP_ADDR		(CONFIG_SYS_TEXT_BASE - 0x00200000)
+include/configs/BMW.h:48:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/BMW.h:127:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/zipitz2.h:30:#define	CONFIG_SYS_TEXT_BASE	0x0
+include/configs/zipitz2.h:61:#define	CONFIG_SYS_TEXT_BASE		0x0
+include/configs/MVBLUE.h:46:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/MVBLUE.h:176:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/sbc8548.h:66:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/sbc8548.h:68:#define CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/sbc8548.h:70:#define CONFIG_SYS_TEXT_BASE	0xfffa0000
+include/configs/sbc8548.h:282:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/sbc8548.h:414: * one for env+bootpg (CONFIG_SYS_TEXT_BASE=0xfffa_0000, 384kB total).  For SODIMM
+include/configs/sbc8548.h:416: * (CONFIG_SYS_TEXT_BASE=0xfff0_0000, 1MB total).  This dynamically sets the right
+include/configs/sbc8548.h:419:#define CONFIG_SYS_MONITOR_LEN		(~CONFIG_SYS_TEXT_BASE + 1)
+include/configs/sbc8548.h:529:#if CONFIG_SYS_TEXT_BASE == 0xfff00000	/* Boot from 64MB SODIMM */
+include/configs/sbc8548.h:532:#elif CONFIG_SYS_TEXT_BASE == 0xfffa0000	/* Boot from 8MB soldered flash */
+include/configs/sbc8548.h:633:	"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/sbc8548.h:634:	"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/sbc8548.h:635:	"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/sbc8548.h:636:	"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/sbc8548.h:637:	"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/afeb9260.h:31:#define CONFIG_SYS_TEXT_BASE		0x21f00000
+include/configs/VoVPN-GW.h:32:#define	CONFIG_SYS_TEXT_BASE		0xfff00000
+include/configs/VoVPN-GW.h:309:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/A3000.h:48:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/A3000.h:137:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/A3000.h:172:/* #define CONFIG_SYS_MONITOR_BASE	   CONFIG_SYS_TEXT_BASE */
+include/configs/am3517_crane.h:360:#define CONFIG_SYS_NAND_U_BOOT_START	CONFIG_SYS_TEXT_BASE
+include/configs/am3517_crane.h:369:#define CONFIG_SYS_TEXT_BASE		0x80100000
+include/configs/spieval.h:175:#if (CONFIG_SYS_TEXT_BASE == 0xFC000000)		/* Boot low */
+include/configs/spieval.h:282:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE /* 0xFC000000 */
+include/configs/spieval.h:333:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/devkit8000.h:45:#define CONFIG_SYS_TEXT_BASE	0x80100000
+include/configs/devkit8000.h:345:#define CONFIG_SYS_NAND_U_BOOT_START   CONFIG_SYS_TEXT_BASE
+include/configs/suvd3.h:30:#define	CONFIG_SYS_TEXT_BASE	0xF0000000
+include/configs/imx31_phycore.h:159:#define CONFIG_SYS_TEXT_BASE		0xA0000000
+include/configs/gdppc440etx.h:43:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/EXBITGEN.h:167:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/DU405.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFFFD0000
+include/configs/PCIPPC6.h:46:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/PCIPPC6.h:124:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/NETPHONE.h:44:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/MPC832XEMDS.h:32:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC832XEMDS.h:174:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/DU440.h:40:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/DU440.h:41:#define CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/DU440.h:58:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/smdkv310.h:47:#define CONFIG_SYS_TEXT_BASE		0x43E00000
+include/configs/FPS860L.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/palmtc.h:38:#define	CONFIG_SYS_TEXT_BASE	0x0
+include/configs/NSCU.h:40:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/gr_ep2s60.h:240:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/gr_ep2s60.h:257:#define UN_RELOC(address) (address-(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE))
+include/configs/ML2.h:33:#define	CONFIG_SYS_TEXT_BASE	0x18000000
+include/configs/sacsng.h:37:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/sacsng.h:89: * it (in MBytes)?  This must contain CONFIG_SYS_TEXT_BASE from board/sacsng/config.mk
+include/configs/calimain.h:47:#define CONFIG_SYS_TEXT_BASE		0x60000000
+include/configs/vl_ma2sc.h:48:#define CONFIG_SYS_TEXT_BASE		0x21000000
+include/configs/vl_ma2sc.h:50:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/MBX860T.h:31:#define	CONFIG_SYS_TEXT_BASE	0xfe000000
+include/configs/r0p7734.h:38:#define CONFIG_SYS_TEXT_BASE 0x8FFC0000
+include/configs/at91sam9rlek.h:32:#define CONFIG_SYS_TEXT_BASE		0x21F00000
+include/configs/IP860.h:39:#define	CONFIG_SYS_TEXT_BASE	0x10000000
+include/configs/APC405.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/ebony.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/uc101.h:35:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/uc101.h:36:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/MPC8313ERDB.h:46:#define CONFIG_SYS_TEXT_BASE	0x00100000 /* CONFIG_SYS_NAND_U_BOOT_DST */
+include/configs/MPC8313ERDB.h:47:#define CONFIG_SYS_TEXT_BASE_SPL 0xfff00000
+include/configs/MPC8313ERDB.h:49:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE_SPL /* start of monitor */
+include/configs/MPC8313ERDB.h:53:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8313ERDB.h:54:#define CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/MPC8313ERDB.h:58:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8313ERDB.h:688:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "\
+include/configs/MPC8313ERDB.h:689:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8313ERDB.h:690:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "\
+include/configs/MPC8313ERDB.h:691:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "\
+include/configs/MPC8313ERDB.h:692:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"\
+include/configs/kvme080.h:31:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/kvme080.h:138:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/mx6qsabrelite.h:136:#define CONFIG_SYS_TEXT_BASE	       0x17800000
+include/configs/otc570.h:41: * Warning: changing CONFIG_SYS_TEXT_BASE requires
+include/configs/otc570.h:46:#define CONFIG_SYS_TEXT_BASE		0x20002000
+include/configs/lubbock.h:46:#define	CONFIG_SYS_TEXT_BASE	0x0
+include/configs/intip.h:48:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/intip.h:49:#define CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/MPC8260ADS.h:51:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8260ADS.h:52:#define CONFIG_SYS_TEXT_BASE	0xFFF00000	/* Standard: boot high */
+include/configs/MPC8260ADS.h:60:#if (CONFIG_SYS_TEXT_BASE != 0xFFF00000)		/* Boot low (flash HRCW) */
+include/configs/MPC8260ADS.h:378:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/MPC8260ADS.h:540:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8260ADS.h:541:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8260ADS.h:542:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/MPC8260ADS.h:543:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8260ADS.h:544:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/cogent_mpc8xx.h:39:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/cogent_mpc8xx.h:189:#define	CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/cogent_mpc8xx.h:314:#define CONFIG_SYS_CMA_CS0_BASE	CONFIG_SYS_TEXT_BASE		/* EPROM */
+include/configs/PCI5441.h:65:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/mx31ads.h:36:#define CONFIG_SYS_TEXT_BASE		0xA0000000
+include/configs/aev.h:45: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/aev.h:51:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/aev.h:52:#define CONFIG_SYS_TEXT_BASE	0xFC000000
+include/configs/aev.h:138:#if (CONFIG_SYS_TEXT_BASE == 0xFC000000)		/* Boot low */
+include/configs/aev.h:231:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE /* 0xFC000000 */
+include/configs/aev.h:282:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/grasshopper.h:162:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/ms7720se.h:55:#define CONFIG_SYS_TEXT_BASE	0x8FFC0000
+include/configs/eNET.h:174:#define CONFIG_SYS_MONITOR_BASE			CONFIG_SYS_TEXT_BASE
+include/configs/ecovec.h:50:#define CONFIG_SYS_TEXT_BASE 0x8FFC0000
+include/configs/MVBC_P.h:35:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MVBC_P.h:36:#define CONFIG_SYS_TEXT_BASE	0xFF800000
+include/configs/MVBC_P.h:215:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/MVBC_P.h:243:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/stxssa.h:46:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/stxssa.h:114:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor	*/
+include/configs/VOH405.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/VOH405.h:258:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/t3corp.h:34:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/t3corp.h:35:#define CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/vme8349.h:53:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/vme8349.h:184:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/pcs440ep.h:44:#define	CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/omap3_beagle.h:438:#define CONFIG_SYS_NAND_U_BOOT_START	CONFIG_SYS_TEXT_BASE
+include/configs/omap3_beagle.h:447:#define CONFIG_SYS_TEXT_BASE		0x80100000
+include/configs/NX823.h:42:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/bamboo.h:39:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/bamboo.h:40:#define CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/atngw100.h:153:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/MPC885ADS.h:18:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/icon.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/DB64360.h:123:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/lwmon.h:42:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/ELPT860.h:50:#define CONFIG_SYS_TEXT_BASE	0x02000000
+include/configs/mx1ads.h:154:#define CONFIG_SYS_TEXT_BASE	0x10000000
+include/configs/CATcenter.h:78:#define	CONFIG_SYS_TEXT_BASE	0xFFFB0000	/* Reserve 320 kB for Monitor */
+include/configs/MigoR.h:60:#define CONFIG_SYS_TEXT_BASE	0x8FFC0000
+include/configs/pdnb3.h:188:#define CONFIG_SYS_TEXT_BASE	       0x50000000
+include/configs/QS823.h:56:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/tt01.h:45:#define CONFIG_SYS_TEXT_BASE	0xA0000000
+include/configs/highbank.h:123:#define CONFIG_SYS_TEXT_BASE		0x00008000
+include/configs/BC3450.h:60: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/BC3450.h:65:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/BC3450.h:66:#define CONFIG_SYS_TEXT_BASE	0xFC000000
+include/configs/BC3450.h:216:#if (CONFIG_SYS_TEXT_BASE == 0xFC000000)		/* Boot low */
+include/configs/BC3450.h:333:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE /* 0xFC000000 */
+include/configs/BC3450.h:394:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/IVMS8.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFF000000
+include/configs/ELPPC.h:38:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/mx6qarm2.h:81:#define CONFIG_SYS_TEXT_BASE		0x17800000
+include/configs/MPC8569MDS.h:72:#define CONFIG_SYS_TEXT_BASE_SPL 0xfff00000
+include/configs/MPC8569MDS.h:73:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE_SPL /* start of monitor */
+include/configs/MPC8569MDS.h:76:#define CONFIG_SYS_TEXT_BASE	0xf8f82000
+include/configs/MPC8569MDS.h:80:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8569MDS.h:81:#define CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/MPC8569MDS.h:85:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/PIP405.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/espt.h:60:#define CONFIG_SYS_TEXT_BASE	0x8FFC0000
+include/configs/csb272.h:43:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/csb272.h:252:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/MPC8349ITX.h:59:#if (CONFIG_SYS_TEXT_BASE == 0xFE000000)
+include/configs/MPC8349ITX.h:70:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8349ITX.h:71:#define CONFIG_SYS_TEXT_BASE	0xFEF00000
+include/configs/MPC8349ITX.h:334:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8349ITX.h:798:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "\
+include/configs/MPC8349ITX.h:799:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8349ITX.h:800:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "\
+include/configs/MPC8349ITX.h:801:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "\
+include/configs/MPC8349ITX.h:802:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"\
+include/configs/yucca.h:48:#define	CONFIG_SYS_TEXT_BASE	0xfffb0000
+include/configs/CPU87.h:42:#define CONFIG_SYS_TEXT_BASE	0xFF800000
+include/configs/CPU87.h:44:#define	CONFIG_SYS_TEXT_BASE	0xFF000000
+include/configs/CPU87.h:325:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/dlvision.h:31:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/vct.h:48:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/CPCI405.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/CPCI405.h:205:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/CPCI405.h:206:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/CPCI405.h:207:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/actux1.h:137:#define CONFIG_SYS_TEXT_BASE		0x50000000
+include/configs/atstk1006.h:172:#define CONFIG_SYS_TEXT_BASE		0x00000000
+include/configs/meesc.h:41: * Warning: changing CONFIG_SYS_TEXT_BASE requires
+include/configs/meesc.h:46:#define CONFIG_SYS_TEXT_BASE		0x20002000
+include/configs/M54455EVB.h:306:#	define CONFIG_SYS_MONITOR_BASE	(CONFIG_SYS_TEXT_BASE + 0x400)
+include/configs/munices.h:35:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/munices.h:36:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/munices.h:124:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/munices.h:159:#define CONFIG_ENV_ADDR		(CONFIG_SYS_TEXT_BASE + CONFIG_ENV_OFFSET)
+include/configs/munices.h:163:#define CONFIG_ENV_ADDR_REDUND	(CONFIG_SYS_TEXT_BASE + CONFIG_ENV_OFFSET_REDUND)
+include/configs/katmai.h:44:#define	CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/mecp5200.h:48:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/mecp5200.h:49:#define CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/mecp5200.h:108:#if (CONFIG_SYS_TEXT_BASE == 0xFF000000)		/* Boot low with 16 MB Flash */
+include/configs/mecp5200.h:112:#if (CONFIG_SYS_TEXT_BASE == 0xFF800000)		/* Boot low with  8 MB Flash */
+include/configs/mecp5200.h:223:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/TQM855L.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/hawkboard.h:55:#define CONFIG_SYS_TEXT_BASE		0xc1080000
+include/configs/hawkboard.h:57:#define CONFIG_SYS_TEXT_BASE		0xc1180000
+include/configs/RRvision.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/gth2.h:144:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/sbc405.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/rsdproto.h:42:#define	CONFIG_SYS_TEXT_BASE	0xff000000
+include/configs/MPC8572DS.h:40:#define CONFIG_SYS_TEXT_BASE_SPL 0xfff00000
+include/configs/MPC8572DS.h:41:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE_SPL /* start of monitor */
+include/configs/MPC8572DS.h:44:#define CONFIG_SYS_TEXT_BASE	0xf8f82000
+include/configs/MPC8572DS.h:48:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8572DS.h:49:#define CONFIG_SYS_TEXT_BASE	0xeff80000
+include/configs/MPC8572DS.h:57:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8572DS.h:743:	"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8572DS.h:744:	"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8572DS.h:745:	"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/MPC8572DS.h:746:	"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8572DS.h:747:	"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/a320evb.h:164:#define CONFIG_SYS_TEXT_BASE		0
+include/configs/P2020DS.h:39:#define CONFIG_SYS_TEXT_BASE		0xf8f80000
+include/configs/P2020DS.h:46:#define CONFIG_SYS_TEXT_BASE		0xf8f80000
+include/configs/P2020DS.h:58:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/P2020DS.h:59:#define CONFIG_SYS_TEXT_BASE	0xeff80000
+include/configs/P2020DS.h:254:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/P2020DS.h:726:	"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/P2020DS.h:727:	"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/P2020DS.h:728:	"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/P2020DS.h:729:	"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/P2020DS.h:730:	"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/P1022DS.h:29:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/P1022DS.h:30:#define CONFIG_SYS_TEXT_BASE	0xeff80000
+include/configs/P1022DS.h:139:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/P1022DS.h:499:	"ubootaddr=" MK_STR(CONFIG_SYS_TEXT_BASE) "\0"		\
+include/configs/mx25pdk.h:22:#define CONFIG_SYS_TEXT_BASE		0x81200000
+include/configs/P2020COME.h:30:#define CONFIG_SYS_TEXT_BASE		0xf8f80000
+include/configs/P2020COME.h:42:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/tnetv107x_evm.h:36:#define CONFIG_SYS_UBOOT_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/xaeniax.h:45:#define	CONFIG_SYS_TEXT_BASE	0x0
+include/configs/MPC8544DS.h:37:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/MPC8544DS.h:38:#define CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/MPC8544DS.h:155:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/MPC8544DS.h:486:	"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/MPC8544DS.h:487:	"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8544DS.h:488:	"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/MPC8544DS.h:489:	"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/MPC8544DS.h:490:	"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/a4m072.h:40:#define CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/a4m072.h:129:#if (CONFIG_SYS_TEXT_BASE == 0xFE000000)		/* Boot low with 32 MB Flash */
+include/configs/a4m072.h:258:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/r7780mp.h:63:#define CONFIG_SYS_TEXT_BASE		0x0FFC0000
+include/configs/r7780mp.h:75:#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_TEXT_BASE - 0x100000)
+include/configs/muas3001.h:36:#define	CONFIG_SYS_TEXT_BASE	0xFF000000
+include/configs/muas3001.h:229:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/ve8313.h:41:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/ve8313.h:42:#define CONFIG_SYS_TEXT_BASE	0xfe000000
+include/configs/ve8313.h:169:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/CMS700.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC8000
+include/configs/CMS700.h:208:#define CONFIG_SYS_MONITOR_BASE		CONFIG_SYS_TEXT_BASE
+include/configs/CMS700.h:209:#define CONFIG_SYS_MONITOR_LEN		(~(CONFIG_SYS_TEXT_BASE) + 1)
+include/configs/NETTA2.h:44:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/kilauea.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/kilauea.h:43:#define CONFIG_SYS_TEXT_BASE	0xFFFA0000
+include/configs/yosemite.h:45:#define	CONFIG_SYS_TEXT_BASE	0xFFF80000
+include/configs/ZPC1900.h:33:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/ZPC1900.h:216:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/mpc7448hpc2.h:45:#define	CONFIG_SYS_TEXT_BASE	0xFF000000
+include/configs/mpc7448hpc2.h:256:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* u-boot code base */
+include/configs/TQM823L.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/devkit3250.h:49:#define CONFIG_SYS_TEXT_BASE		0x83FA0000
+include/configs/devkit3250.h:51:#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_TEXT_BASE - SZ_1M)
+include/configs/IAD210.h:47:#define	CONFIG_SYS_TEXT_BASE	0x08000000
+include/configs/alpr.h:37:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/aspenite.h:47:#define CONFIG_SYS_INIT_SP_ADDR		(CONFIG_SYS_TEXT_BASE - 0x00200000)
+include/configs/hermes.h:39:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/mv-common.h:42: * Custom CONFIG_SYS_TEXT_BASE can be done in <board>.h
+include/configs/mv-common.h:44:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/mv-common.h:45:#define	CONFIG_SYS_TEXT_BASE	0x00600000
+include/configs/mv-common.h:46:#endif /* CONFIG_SYS_TEXT_BASE */
+include/configs/TQM834x.h:40:#define	CONFIG_SYS_TEXT_BASE	0x80000000
+include/configs/TQM834x.h:151:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/ESTEEM192E.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/grsim.h:239:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/grsim.h:256:#define UN_RELOC(address) (address-(CONFIG_SYS_RELOC_MONITOR_BASE-CONFIG_SYS_TEXT_BASE))
+include/configs/ep82xxm.h:34:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/ep82xxm.h:336:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/mcc200.h:37: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/mcc200.h:42:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/mcc200.h:43:#define CONFIG_SYS_TEXT_BASE	0xFC000000
+include/configs/mcc200.h:179:	"text_base=" MK_STR(CONFIG_SYS_TEXT_BASE) "\0"				\
+include/configs/mcc200.h:248:#if CONFIG_SYS_TEXT_BASE == CONFIG_SYS_FLASH_BASE
+include/configs/mcc200.h:267:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/PM520.h:36:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/PM520.h:241:#define CONFIG_SYS_MONITOR_BASE    CONFIG_SYS_TEXT_BASE
+include/configs/at91sam9260ek.h:37: * Warning: changing CONFIG_SYS_TEXT_BASE requires
+include/configs/at91sam9260ek.h:42:#define CONFIG_SYS_TEXT_BASE		0x21f00000
+include/configs/TB5200.h:41: * Valid values for CONFIG_SYS_TEXT_BASE are:
+include/configs/TB5200.h:47:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/TB5200.h:48:#define CONFIG_SYS_TEXT_BASE	0xFC000000
+include/configs/TB5200.h:143:#if (CONFIG_SYS_TEXT_BASE == 0xFC000000)		/* Boot low */
+include/configs/TB5200.h:262:#define CONFIG_SYS_FLASH_BASE		CONFIG_SYS_TEXT_BASE /* 0xFC000000 */
+include/configs/TB5200.h:339:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/MPC8541CDS.h:40:#define	CONFIG_SYS_TEXT_BASE	0xfff80000
+include/configs/MPC8541CDS.h:144:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/shmin.h:59:#define CONFIG_SYS_TEXT_BASE	0x8DFB0000
+include/configs/mpc5121ads.h:50:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/mpc5121ads.h:276:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE		/* Start of monitor */
+include/configs/ocotea.h:49:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/v37.h:39:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/P1_P2_RDB.h:54:#define CONFIG_SYS_TEXT_BASE_SPL 0xfff00000
+include/configs/P1_P2_RDB.h:55:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE_SPL /* start of monitor */
+include/configs/P1_P2_RDB.h:58:#define CONFIG_SYS_TEXT_BASE		0xf8f82000
+include/configs/P1_P2_RDB.h:64:#define CONFIG_SYS_TEXT_BASE		0x11000000
+include/configs/P1_P2_RDB.h:70:#define CONFIG_SYS_TEXT_BASE		0x11000000
+include/configs/P1_P2_RDB.h:74:#ifndef CONFIG_SYS_TEXT_BASE
+include/configs/P1_P2_RDB.h:75:#define CONFIG_SYS_TEXT_BASE		0xeff80000
+include/configs/P1_P2_RDB.h:83:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* start of monitor */
+include/configs/P1_P2_RDB.h:659:		"protect off " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "	\
+include/configs/P1_P2_RDB.h:660:		"erase " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/P1_P2_RDB.h:661:		"cp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize; "	\
+include/configs/P1_P2_RDB.h:662:		"protect on " MK_STR(CONFIG_SYS_TEXT_BASE) " +$filesize; "		\
+include/configs/P1_P2_RDB.h:663:		"cmp.b $loadaddr " MK_STR(CONFIG_SYS_TEXT_BASE) " $filesize\0"	\
+include/configs/smdk5250.h:44:#define CONFIG_SYS_TEXT_BASE		0x43E00000
+include/configs/mgcoge.h:37:#define	CONFIG_SYS_TEXT_BASE	0xFE000000
+include/configs/ms7750se.h:64:#define CONFIG_SYS_TEXT_BASE		0x8FFC0000
+include/configs/ms7750se.h:66:#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_TEXT_BASE - 0x100000)
+include/configs/TQM8260.h:47:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/TQM8260.h:279: * it (in MBytes)? This must contain CONFIG_SYS_TEXT_BASE from board/tqm8260/config.mk
+include/configs/TQM8260.h:374:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/walnut.h:41:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+include/configs/QS860T.h:58:#define	CONFIG_SYS_TEXT_BASE	0xFFF00000
+include/configs/GENIETV.h:41:#define	CONFIG_SYS_TEXT_BASE	0x00000000
+include/configs/RPXlite.h:42:#define	CONFIG_SYS_TEXT_BASE	0xfff00000
+include/configs/RPXlite.h:131:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE
+include/configs/amcc-common.h:27:#define CONFIG_SYS_MONITOR_BASE	CONFIG_SYS_TEXT_BASE	/* Start of U-Boot	*/
+include/configs/RPXsuper.h:4:#define	CONFIG_SYS_TEXT_BASE	0x80F00000
+include/configs/RPXsuper.h:38: * it (in MBytes)? This must contain CONFIG_SYS_TEXT_BASE.
+include/configs/svm_sc8xx.h:34:#define	CONFIG_SYS_TEXT_BASE	0x40000000
+include/configs/CPCIISER4.h:40:#define	CONFIG_SYS_TEXT_BASE	0xFFFC0000
+Makefile:416:		-O u-boot -a $(CONFIG_SYS_TEXT_BASE) -e 0 \
+Makefile:423:		-e $(CONFIG_SYS_TEXT_BASE) -d $< $@
+Makefile:427:		-a $(CONFIG_SYS_TEXT_BASE) -e $(CONFIG_SYS_TEXT_BASE) -d $< $@
+Makefile:439:		-e $(CONFIG_SYS_TEXT_BASE) -d $(obj)u-boot-ubl.bin $(obj)u-boot.ubl
+nand_spl/board/samsung/smdk6400/Makefile:35:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/samsung/smdk6400/config.mk:26:# CONFIG_SYS_TEXT_BASE for SPL:
+nand_spl/board/samsung/smdk6400/config.mk:30:# CONFIG_SYS_TEXT_BASE = 0
+nand_spl/board/samsung/smdk6400/config.mk:35:# -> PAD_TO = CONFIG_SYS_TEXT_BASE + 4096
+nand_spl/board/samsung/smdk6400/config.mk:36:PAD_TO	:= $(shell expr $$[$(CONFIG_SYS_TEXT_BASE) + 4096])
+nand_spl/board/samsung/smdk2410/Makefile:35:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/samsung/smdk2410/config.mk:26:# CONFIG_SYS_TEXT_BASE for SPL:
+nand_spl/board/samsung/smdk2410/config.mk:30:# CONFIG_SYS_TEXT_BASE = 0
+nand_spl/board/samsung/smdk2410/config.mk:35:# -> PAD_TO = CONFIG_SYS_TEXT_BASE + 4096
+nand_spl/board/samsung/smdk2410/config.mk:36:PAD_TO	:= $(shell expr $$[$(CONFIG_SYS_TEXT_BASE) + 4096])
+nand_spl/board/samsung/smdk2410/start.S:80:	.word	CONFIG_SYS_TEXT_BASE
+nand_spl/board/samsung/smdk2410/lowlevel_init.S:130:	.word	CONFIG_SYS_TEXT_BASE
+nand_spl/board/freescale/p1_p2_rdb_pc/Makefile:27:CONFIG_SYS_TEXT_BASE_SPL := 0xfff00000
+nand_spl/board/freescale/p1_p2_rdb_pc/Makefile:35:LDFLAGS := -T $(nandobj)u-boot-nand_spl.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/board/freescale/p1010rdb/Makefile:27:CONFIG_SYS_TEXT_BASE_SPL := 0xff800000
+nand_spl/board/freescale/p1010rdb/Makefile:35:LDFLAGS := -T $(nandobj)u-boot-nand_spl.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) $(LDFLAGS) \
+nand_spl/board/freescale/mx31pdk/Makefile:9:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/freescale/mpc8313erdb/Makefile:33:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/board/freescale/mpc8569mds/Makefile:27:CONFIG_SYS_TEXT_BASE_SPL := 0xfff00000
+nand_spl/board/freescale/mpc8569mds/Makefile:35:LDFLAGS := -T $(nandobj)u-boot-nand_spl.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/board/freescale/mpc8536ds/Makefile:27:CONFIG_SYS_TEXT_BASE_SPL := 0xfff00000
+nand_spl/board/freescale/mpc8536ds/Makefile:35:LDFLAGS := -T $(nandobj)u-boot-nand_spl.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/board/freescale/mpc8315erdb/Makefile:33:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/board/freescale/p1_p2_rdb/Makefile:27:CONFIG_SYS_TEXT_BASE_SPL := 0xfff00000
+nand_spl/board/freescale/p1_p2_rdb/Makefile:35:LDFLAGS := -T $(nandobj)u-boot-nand_spl.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/board/freescale/mpc8572ds/Makefile:27:CONFIG_SYS_TEXT_BASE_SPL := 0xfff00000
+nand_spl/board/freescale/mpc8572ds/Makefile:35:LDFLAGS := -T $(nandobj)u-boot-nand_spl.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/board/freescale/p1023rds/Makefile:30:LDFLAGS := -T $(nandobj)u-boot-nand_spl.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/board/karo/tx25/Makefile:30:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/amcc/bamboo/Makefile:30:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/amcc/bamboo/config.mk:28:# CONFIG_SYS_TEXT_BASE for SPL:
+nand_spl/board/amcc/bamboo/config.mk:33:# CONFIG_SYS_TEXT_BASE to starting address in i-cache here.
+nand_spl/board/amcc/bamboo/config.mk:35:CONFIG_SYS_TEXT_BASE = 0x00800000
+nand_spl/board/amcc/bamboo/config.mk:38:# -> PAD_TO = CONFIG_SYS_TEXT_BASE + 0x4000
+nand_spl/board/amcc/sequoia/Makefile:30:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/amcc/sequoia/config.mk:28:# CONFIG_SYS_TEXT_BASE for SPL:
+nand_spl/board/amcc/sequoia/config.mk:33:# CONFIG_SYS_TEXT_BASE to starting address in internal SRAM here.
+nand_spl/board/amcc/sequoia/config.mk:35:CONFIG_SYS_TEXT_BASE = 0xE0013000
+nand_spl/board/amcc/sequoia/config.mk:38:# -> PAD_TO = CONFIG_SYS_TEXT_BASE + 0x4000
+nand_spl/board/amcc/kilauea/Makefile:30:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/amcc/kilauea/config.mk:28:# CONFIG_SYS_TEXT_BASE for SPL:
+nand_spl/board/amcc/kilauea/config.mk:34:# CONFIG_SYS_TEXT_BASE to starting address in SDRAM here.
+nand_spl/board/amcc/kilauea/config.mk:36:CONFIG_SYS_TEXT_BASE = 0x00800000
+nand_spl/board/amcc/kilauea/config.mk:39:# -> PAD_TO = CONFIG_SYS_TEXT_BASE + 0x4000
+nand_spl/board/amcc/canyonlands/Makefile:30:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/amcc/canyonlands/config.mk:28:# CONFIG_SYS_TEXT_BASE for SPL:
+nand_spl/board/amcc/canyonlands/config.mk:33:# CONFIG_SYS_TEXT_BASE to starting address in internal SRAM here.
+nand_spl/board/amcc/canyonlands/config.mk:35:CONFIG_SYS_TEXT_BASE = 0xE3003000
+nand_spl/board/amcc/canyonlands/config.mk:38:# -> PAD_TO = CONFIG_SYS_TEXT_BASE + 0x20000
+nand_spl/board/amcc/acadia/Makefile:30:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(LDFLAGS) \
+nand_spl/board/amcc/acadia/config.mk:28:# CONFIG_SYS_TEXT_BASE for SPL:
+nand_spl/board/amcc/acadia/config.mk:33:# CONFIG_SYS_TEXT_BASE to starting address in internal SRAM here.
+nand_spl/board/amcc/acadia/config.mk:35:CONFIG_SYS_TEXT_BASE = 0xf8004000
+nand_spl/board/amcc/acadia/config.mk:38:# -> PAD_TO = CONFIG_SYS_TEXT_BASE + 0x4000
+nand_spl/board/sheldon/simpc8313/Makefile:33:LDFLAGS := -T $(nandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE_SPL) \
+nand_spl/nand_boot_fsl_nfc.c:265:	relocate_code (CONFIG_SYS_TEXT_BASE - TOTAL_MALLOC_LEN, NULL,
+nand_spl/nand_boot_fsl_nfc.c:266:		       CONFIG_SYS_TEXT_BASE);
+onenand_ipl/board/apollon/Makefile:6:LDFLAGS	= -Bstatic -T $(onenandobj)u-boot.lds -Ttext $(CONFIG_SYS_TEXT_BASE) $(PLATFORM_LDFLAGS)
+onenand_ipl/board/apollon/low_levelinit.S:68:	.word	CONFIG_SYS_TEXT_BASE	/* sdram load addr from config.mk */
+onenand_ipl/board/apollon/config.mk:14:CONFIG_SYS_TEXT_BASE = 0x00000000
+README:2779:		(CONFIG_SYS_TEXT_BASE) used when linking) - same as
+tools/Makefile:169:		-DCONFIG_SYS_TEXT_BASE=$(CONFIG_SYS_TEXT_BASE) \

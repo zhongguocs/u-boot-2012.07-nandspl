@@ -1,0 +1,198 @@
+
+Discarded input sections
+
+ .data          0x00000000        0x0 start.o
+ .bss           0x00000000        0x0 start.o
+ .text          0x00000000        0x0 nand_boot.o
+ .data          0x00000000        0x0 nand_boot.o
+ .bss           0x00000000        0x0 nand_boot.o
+ .data          0x00000000        0x0 lowlevel_init.o
+ .bss           0x00000000        0x0 lowlevel_init.o
+ .text          0x00000000        0x0 s3c2410_nand.o
+ .data          0x00000000        0x0 s3c2410_nand.o
+ .bss           0x00000000        0x0 s3c2410_nand.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                . = 0x0
+                0x00000000                . = ALIGN (0x4)
+
+.text           0x00000000      0x184
+ start.o(.text)
+ .text          0x00000000      0x120 start.o
+                0x00000000                _start
+                0x00000040                _TEXT_BASE
+                0x00000044                _bss_start_ofs
+                0x00000048                _bss_end_ofs
+                0x0000004c                _end_ofs
+                0x00000050                IRQ_STACK_START_IN
+ nand_boot.o(.text)
+ *(.text)
+ .text          0x00000120       0x64 lowlevel_init.o
+                0x00000124                lowlevel_init
+
+.glue_7         0x00000184        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000184        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000184        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000184        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.text.nand_command
+                0x00000184       0xc8
+ .text.nand_command
+                0x00000184       0xc8 nand_boot.o
+
+.text.nand_boot
+                0x0000024c      0x194
+ .text.nand_boot
+                0x0000024c      0x194 nand_boot.o
+                0x0000024c                nand_boot
+
+.text.nand_read_buf
+                0x000003e0       0x2c
+ .text.nand_read_buf
+                0x000003e0       0x2c s3c2410_nand.o
+                0x000003e0                nand_read_buf
+
+.text.s3c2410_hwcontrol
+                0x0000040c       0x78
+ .text.s3c2410_hwcontrol
+                0x0000040c       0x78 s3c2410_nand.o
+
+.text.s3c2410_dev_ready
+                0x00000484       0x14
+ .text.s3c2410_dev_ready
+                0x00000484       0x14 s3c2410_nand.o
+
+.text.board_nand_init
+                0x00000498       0x70
+ .text.board_nand_init
+                0x00000498       0x70 s3c2410_nand.o
+                0x00000498                board_nand_init
+                0x00000508                . = ALIGN (0x4)
+
+.rodata
+ *(SORT(.rodata*))
+                0x00000508                . = ALIGN (0x4)
+
+.data
+ *(.data)
+                0x00000508                . = ALIGN (0x4)
+
+.got
+ *(.got)
+                0x00000508                __u_boot_cmd_start = .
+
+.u_boot_cmd
+ *(.u_boot_cmd)
+                0x00000508                __u_boot_cmd_end = .
+                0x00000508                . = ALIGN (0x4)
+
+.rel.dyn        0x00000508        0x0
+                0x00000508                __rel_dyn_start = .
+ *(.rel*)
+                0x00000508                __rel_dyn_end = .
+
+.dynsym         0x00000508        0x0
+                0x00000508                __dynsym_start = .
+ *(.dynsym)
+                0x00000508                _end = .
+
+.bss            0x00000508        0x0
+                0x00000508                __bss_start = .
+ *(.bss)
+                0x00000508                . = ALIGN (0x4)
+                0x00000508                __bss_end__ = .
+Address of section .text set to 0x0
+LOAD start.o
+LOAD lowlevel_init.o
+LOAD nand_boot.o
+LOAD s3c2410_nand.o
+OUTPUT(/home/xfwei/work/u-boot-2012.07/nand_spl/u-boot-spl elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x23
+ .ARM.attributes
+                0x00000000       0x17 start.o
+ .ARM.attributes
+                0x00000017       0x27 nand_boot.o
+ .ARM.attributes
+                0x0000003e       0x17 lowlevel_init.o
+ .ARM.attributes
+                0x00000055       0x27 s3c2410_nand.o
+
+.comment        0x00000000       0x18
+ .comment       0x00000000       0x18 nand_boot.o
+                                 0x19 (size before relaxing)
+ .comment       0x00000000       0x19 s3c2410_nand.o
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 nand_boot.o
+ .note.GNU-stack
+                0x00000000        0x0 s3c2410_nand.o
+
+.debug_line     0x00000000      0x478
+ .debug_line    0x00000000       0x6a start.o
+ .debug_line    0x0000006a      0x1c5 nand_boot.o
+ .debug_line    0x0000022f       0x49 lowlevel_init.o
+ .debug_line    0x00000278      0x200 s3c2410_nand.o
+
+.debug_info     0x00000000     0x288f
+ .debug_info    0x00000000       0x6e start.o
+ .debug_info    0x0000006e     0x13e3 nand_boot.o
+ .debug_info    0x00001451       0x76 lowlevel_init.o
+ .debug_info    0x000014c7     0x13c8 s3c2410_nand.o
+
+.debug_abbrev   0x00000000      0x53c
+ .debug_abbrev  0x00000000       0x14 start.o
+ .debug_abbrev  0x00000014      0x2ad nand_boot.o
+ .debug_abbrev  0x000002c1       0x14 lowlevel_init.o
+ .debug_abbrev  0x000002d5      0x267 s3c2410_nand.o
+
+.debug_aranges  0x00000000       0xa0
+ .debug_aranges
+                0x00000000       0x20 start.o
+ .debug_aranges
+                0x00000020       0x28 nand_boot.o
+ .debug_aranges
+                0x00000048       0x20 lowlevel_init.o
+ .debug_aranges
+                0x00000068       0x38 s3c2410_nand.o
+
+.debug_frame    0x00000000       0x9c
+ .debug_frame   0x00000000       0x4c nand_boot.o
+ .debug_frame   0x0000004c       0x50 s3c2410_nand.o
+
+.debug_loc      0x00000000      0x2ce
+ .debug_loc     0x00000000      0x159 nand_boot.o
+ .debug_loc     0x00000159      0x175 s3c2410_nand.o
+
+.debug_pubnames
+                0x00000000       0x58
+ .debug_pubnames
+                0x00000000       0x20 nand_boot.o
+ .debug_pubnames
+                0x00000020       0x38 s3c2410_nand.o
+
+.debug_ranges   0x00000000       0xf0
+ .debug_ranges  0x00000000       0x90 nand_boot.o
+ .debug_ranges  0x00000090       0x60 s3c2410_nand.o
+
+.debug_str      0x00000000      0x8e6
+ .debug_str     0x00000000      0x7b3 nand_boot.o
+                                0x8b2 (size before relaxing)
+ .debug_str     0x000007b3      0x133 s3c2410_nand.o
+                                0x921 (size before relaxing)

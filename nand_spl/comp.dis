@@ -1,0 +1,9 @@
+--- u-boot-spl.dis	2013-10-30 09:28:38.999130989 +0800
++++ u-boot-spl-16k.dis	2013-10-30 09:28:00.275131280 +0800
+@@ -1,5 +1,5 @@
+ 
+-u-boot-spl.bin:     file format binary
++u-boot-spl-16k.bin:     file format binary
+ 
+ 
+ Disassembly of section .data:

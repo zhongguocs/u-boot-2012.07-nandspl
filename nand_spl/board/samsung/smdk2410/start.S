@@ -1,0 +1,1 @@
+/home/xfwei/work/u-boot-2012.07/arch/arm/cpu/arm920t/start.S

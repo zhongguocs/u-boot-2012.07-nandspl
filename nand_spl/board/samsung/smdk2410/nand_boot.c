@@ -1,0 +1,1 @@
+/home/xfwei/work/u-boot-2012.07/nand_spl/nand_boot.c

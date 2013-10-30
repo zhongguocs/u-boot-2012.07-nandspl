@@ -1,0 +1,1 @@
+/home/xfwei/work/u-boot-2012.07/board/samsung/smdk2410/lowlevel_init.S
